@@ -1,0 +1,1239 @@
+define(['dart_sdk', 'packages/intl/intl.dart', 'packages/laji_proj/generated/intl/messages_all.dart', 'packages/flutter/src/widgets/widget_span.dart'], (function load__packages__laji_proj__generated__l10n_dart(dart_sdk, packages__intl__intl$46dart, packages__laji_proj__generated__intl__messages_all$46dart, packages__flutter__src__widgets__widget_span$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const ui = dart_sdk.ui;
+  const async = dart_sdk.async;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const intl = packages__intl__intl$46dart.intl;
+  const messages_all = packages__laji_proj__generated__intl__messages_all$46dart.generated__intl__messages_all;
+  const localizations = packages__flutter__src__widgets__widget_span$46dart.src__widgets__localizations;
+  var l10n = Object.create(dart.library);
+  var $isEmpty = dartx.isEmpty;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    SL: () => (T.SL = dart.constFn(dart.legacy(l10n.S)))(),
+    boolL: () => (T.boolL = dart.constFn(dart.legacy(core.bool)))(),
+    boolLToSL: () => (T.boolLToSL = dart.constFn(dart.fnType(T.SL(), [T.boolL()])))(),
+    ObjectL: () => (T.ObjectL = dart.constFn(dart.legacy(core.Object)))(),
+    JSArrayOfObjectL: () => (T.JSArrayOfObjectL = dart.constFn(_interceptors.JSArray$(T.ObjectL())))(),
+    LocaleL: () => (T.LocaleL = dart.constFn(dart.legacy(ui.Locale)))(),
+    AppLocalizationDelegateL: () => (T.AppLocalizationDelegateL = dart.constFn(dart.legacy(l10n.AppLocalizationDelegate)))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: l10n.AppLocalizationDelegate.prototype
+      });
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: ui.Locale.prototype,
+        [Locale__countryCode]: null,
+        [Locale_scriptCode]: null,
+        [Locale__languageCode]: "en"
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: ui.Locale.prototype,
+        [Locale__countryCode]: null,
+        [Locale_scriptCode]: null,
+        [Locale__languageCode]: "zh"
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: ui.Locale.prototype,
+        [Locale__countryCode]: "CN",
+        [Locale_scriptCode]: null,
+        [Locale__languageCode]: "zh"
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2, C[3] || CT.C3, C[4] || CT.C4], T.LocaleL());
+    }
+  }, false);
+  var C = Array(5).fill(void 0);
+  var I = ["package:laji_proj/generated/l10n.dart"];
+  l10n.S = class S extends core.Object {
+    static load(locale) {
+      let t0, t0$;
+      let name = dart.test((t0$ = (t0 = locale.countryCode, t0 == null ? null : t0[$isEmpty]), t0$ == null ? false : t0$)) ? locale.languageCode : dart.toString(locale);
+      let localeName = intl.Intl.canonicalizedLocale(name);
+      return messages_all.initializeMessages(localeName).then(T.SL(), dart.fn(_ => {
+        intl.Intl.defaultLocale = localeName;
+        l10n.S.current = new l10n.S.new();
+        return l10n.S.current;
+      }, T.boolLToSL()));
+    }
+    static of(context) {
+      return localizations.Localizations.of(T.SL(), context, dart.wrapType(l10n.S));
+    }
+    get search_for_markets_or_products() {
+      return intl.Intl.message("Search for markets or products", {name: "search_for_markets_or_products", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get top_markets() {
+      return intl.Intl.message("Top Markets", {name: "top_markets", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get ordered_by_nearby_first() {
+      return intl.Intl.message("Ordered by Nearby first", {name: "ordered_by_nearby_first", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get trending_this_week() {
+      return intl.Intl.message("Trending This Week", {name: "trending_this_week", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get product_categories() {
+      return intl.Intl.message("Product Categories", {name: "product_categories", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get most_popular() {
+      return intl.Intl.message("Most Popular", {name: "most_popular", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get recent_reviews() {
+      return intl.Intl.message("Recent Reviews", {name: "recent_reviews", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get login() {
+      return intl.Intl.message("Login", {name: "login", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get skip() {
+      return intl.Intl.message("Skip", {name: "skip", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get about() {
+      return intl.Intl.message("About", {name: "about", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get submit() {
+      return intl.Intl.message("Submit", {name: "submit", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get verify() {
+      return intl.Intl.message("Verify", {name: "verify", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get select_your_preferred_languages() {
+      return intl.Intl.message("Select your preferred languages", {name: "select_your_preferred_languages", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get order_id() {
+      return intl.Intl.message("Order Id", {name: "order_id", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get category() {
+      return intl.Intl.message("Category", {name: "category", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get checkout() {
+      return intl.Intl.message("Checkout", {name: "checkout", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get payment_mode() {
+      return intl.Intl.message("Payment Mode", {name: "payment_mode", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get select_your_preferred_payment_mode() {
+      return intl.Intl.message("Select your preferred payment mode", {name: "select_your_preferred_payment_mode", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get or_checkout_with() {
+      return intl.Intl.message("Or Checkout With", {name: "or_checkout_with", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get subtotal() {
+      return intl.Intl.message("Subtotal", {name: "subtotal", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get total() {
+      return intl.Intl.message("Total", {name: "total", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get confirm_payment() {
+      return intl.Intl.message("Confirm Payment", {name: "confirm_payment", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get information() {
+      return intl.Intl.message("Information", {name: "information", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get featured_products() {
+      return intl.Intl.message("Featured Products", {name: "featured_products", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get what_they_say() {
+      return intl.Intl.message("What They Say ?", {name: "what_they_say", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get favorite_products() {
+      return intl.Intl.message("Favorite Products", {name: "favorite_products", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get options() {
+      return intl.Intl.message("Options", {name: "options", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get select_options_to_add_them_on_the_product() {
+      return intl.Intl.message("Select options to add them on the product", {name: "select_options_to_add_them_on_the_product", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get reviews() {
+      return intl.Intl.message("Reviews", {name: "reviews", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get quantity() {
+      return intl.Intl.message("Quantity", {name: "quantity", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get add_to_cart() {
+      return intl.Intl.message("Add to Cart", {name: "add_to_cart", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get faq() {
+      return intl.Intl.message("Faq", {name: "faq", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get help_supports() {
+      return intl.Intl.message("Help & Supports", {name: "help_supports", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get app_language() {
+      return intl.Intl.message("App Language", {name: "app_language", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get i_forgot_password() {
+      return intl.Intl.message("I forgot password ?", {name: "i_forgot_password", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get i_dont_have_an_account() {
+      return intl.Intl.message("I don't have an account?", {name: "i_dont_have_an_account", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get maps_explorer() {
+      return intl.Intl.message("Maps Explorer", {name: "maps_explorer", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get all_product() {
+      return intl.Intl.message("All Products", {name: "all_product", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get notifications() {
+      return intl.Intl.message("Notifications", {name: "notifications", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get confirmation() {
+      return intl.Intl.message("Confirmation", {name: "confirmation", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get your_order_has_been_successfully_submitted() {
+      return intl.Intl.message("Your order has been successfully submitted!", {name: "your_order_has_been_successfully_submitted", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get tax() {
+      return intl.Intl.message("TAX", {name: "tax", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get my_orders() {
+      return intl.Intl.message("My Orders", {name: "my_orders", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get profile() {
+      return intl.Intl.message("Profile", {name: "profile", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get favorites() {
+      return intl.Intl.message("Favorites", {name: "favorites", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get home() {
+      return intl.Intl.message("Home", {name: "home", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get payment_options() {
+      return intl.Intl.message("Payment Options", {name: "payment_options", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get cash_on_delivery() {
+      return intl.Intl.message("Cash on delivery", {name: "cash_on_delivery", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get paypal_payment() {
+      return intl.Intl.message("PayPal Payment", {name: "paypal_payment", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get recent_orders() {
+      return intl.Intl.message("Recent Orders", {name: "recent_orders", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get settings() {
+      return intl.Intl.message("Settings", {name: "settings", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get profile_settings() {
+      return intl.Intl.message("Profile Settings", {name: "profile_settings", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get full_name() {
+      return intl.Intl.message("Full name", {name: "full_name", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get email() {
+      return intl.Intl.message("Email", {name: "email", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get phone() {
+      return intl.Intl.message("Phone", {name: "phone", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get address() {
+      return intl.Intl.message("Address", {name: "address", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get payments_settings() {
+      return intl.Intl.message("Payments Settings", {name: "payments_settings", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get default_credit_card() {
+      return intl.Intl.message("Default Credit Card", {name: "default_credit_card", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get app_settings() {
+      return intl.Intl.message("App Settings", {name: "app_settings", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get languages() {
+      return intl.Intl.message("Languages", {name: "languages", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get english() {
+      return intl.Intl.message("English", {name: "english", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get help_support() {
+      return intl.Intl.message("Help & Support", {name: "help_support", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get register() {
+      return intl.Intl.message("Register", {name: "register", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get lets_start_with_register() {
+      return intl.Intl.message("Let's Start with register!", {name: "lets_start_with_register", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get should_be_more_than_3_letters() {
+      return intl.Intl.message("Should be more than 3 letters", {name: "should_be_more_than_3_letters", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get john_doe() {
+      return intl.Intl.message("John Doe", {name: "john_doe", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get should_be_a_valid_email() {
+      return intl.Intl.message("Should be a valid email", {name: "should_be_a_valid_email", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get should_be_more_than_6_letters() {
+      return intl.Intl.message("Should be more than 6 letters", {name: "should_be_more_than_6_letters", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get password() {
+      return intl.Intl.message("Password", {name: "password", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get i_have_account_back_to_login() {
+      return intl.Intl.message("Back to login", {name: "i_have_account_back_to_login", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get tracking_order() {
+      return intl.Intl.message("Tracking Order", {name: "tracking_order", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get discover__explorer() {
+      return intl.Intl.message("Discover & Explorer", {name: "discover__explorer", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get you_can_discover_markets() {
+      return intl.Intl.message("You can discover markets & stores around you and choose you best meal after few minutes we prepare and deliver it for you", {name: "you_can_discover_markets", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get reset_cart() {
+      return intl.Intl.message("Reset Cart?", {name: "reset_cart", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get cart() {
+      return intl.Intl.message("Cart", {name: "cart", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get shopping_cart() {
+      return intl.Intl.message("Shopping Cart", {name: "shopping_cart", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get verify_your_quantity_and_click_checkout() {
+      return intl.Intl.message("Verify your quantity and click checkout", {name: "verify_your_quantity_and_click_checkout", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get lets_start_with_login() {
+      return intl.Intl.message("Let's Start with Login!", {name: "lets_start_with_login", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get should_be_more_than_3_characters() {
+      return intl.Intl.message("Should be more than 3 characters", {name: "should_be_more_than_3_characters", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get you_must_add_products_of_the_same_markets_choose_one() {
+      return intl.Intl.message("You must add products of the same markets choose one markets only!", {name: "you_must_add_products_of_the_same_markets_choose_one", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get reset_your_cart_and_order_meals_form_this_market() {
+      return intl.Intl.message("Reset your cart and order meals form this market", {name: "reset_your_cart_and_order_meals_form_this_market", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get keep_your_old_meals_of_this_market() {
+      return intl.Intl.message("Keep your old meals of this market", {name: "keep_your_old_meals_of_this_market", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get reset() {
+      return intl.Intl.message("Reset", {name: "reset", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get close() {
+      return intl.Intl.message("Close", {name: "close", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get application_preferences() {
+      return intl.Intl.message("Application Preferences", {name: "application_preferences", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get help__support() {
+      return intl.Intl.message("Help & Support", {name: "help__support", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get light_mode() {
+      return intl.Intl.message("Light Mode", {name: "light_mode", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get dark_mode() {
+      return intl.Intl.message("Dark Mode", {name: "dark_mode", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get log_out() {
+      return intl.Intl.message("Log out", {name: "log_out", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get version() {
+      return intl.Intl.message("Version", {name: "version", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get dont_have_any_item_in_your_cart() {
+      return intl.Intl.message("D'ont have any item in your cart", {name: "dont_have_any_item_in_your_cart", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get start_exploring() {
+      return intl.Intl.message("Start Exploring", {name: "start_exploring", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get dont_have_any_item_in_the_notification_list() {
+      return intl.Intl.message("Don't have any item in the notification list", {name: "dont_have_any_item_in_the_notification_list", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get payment_settings() {
+      return intl.Intl.message("Payment Settings", {name: "payment_settings", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get not_a_valid_number() {
+      return intl.Intl.message("Not a valid number", {name: "not_a_valid_number", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get not_a_valid_date() {
+      return intl.Intl.message("Not a valid date", {name: "not_a_valid_date", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get not_a_valid_cvc() {
+      return intl.Intl.message("Not a valid CVC", {name: "not_a_valid_cvc", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get cancel() {
+      return intl.Intl.message("Cancel", {name: "cancel", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get save() {
+      return intl.Intl.message("Save", {name: "save", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get edit() {
+      return intl.Intl.message("Edit", {name: "edit", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get not_a_valid_full_name() {
+      return intl.Intl.message("Not a valid full name", {name: "not_a_valid_full_name", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get email_address() {
+      return intl.Intl.message("Email Address", {name: "email_address", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get not_a_valid_email() {
+      return intl.Intl.message("Not a valid email", {name: "not_a_valid_email", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get not_a_valid_phone() {
+      return intl.Intl.message("Not a valid phone", {name: "not_a_valid_phone", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get not_a_valid_address() {
+      return intl.Intl.message("Not a valid address", {name: "not_a_valid_address", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get not_a_valid_biography() {
+      return intl.Intl.message("Not a valid biography", {name: "not_a_valid_biography", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get your_biography() {
+      return intl.Intl.message("Your biography", {name: "your_biography", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get your_address() {
+      return intl.Intl.message("Your Address", {name: "your_address", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get search() {
+      return intl.Intl.message("Search", {name: "search", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get recents_search() {
+      return intl.Intl.message("Recent Search", {name: "recents_search", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get verify_your_internet_connection() {
+      return intl.Intl.message("Verify your internet connection", {name: "verify_your_internet_connection", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get carts_refreshed_successfuly() {
+      return intl.Intl.message("Carts refreshed successfully", {name: "carts_refreshed_successfuly", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    the_product_was_removed_from_your_cart(productName) {
+      return intl.Intl.message("The " + dart.str(productName) + " was removed from your cart", {name: "the_product_was_removed_from_your_cart", desc: "", args: T.JSArrayOfObjectL().of([productName])});
+    }
+    get category_refreshed_successfuly() {
+      return intl.Intl.message("Category refreshed successfully", {name: "category_refreshed_successfuly", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get notifications_refreshed_successfuly() {
+      return intl.Intl.message("Notifications refreshed successfully", {name: "notifications_refreshed_successfuly", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get order_refreshed_successfuly() {
+      return intl.Intl.message("Order refreshed successfully", {name: "order_refreshed_successfuly", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get orders_refreshed_successfuly() {
+      return intl.Intl.message("Orders refreshed successfully", {name: "orders_refreshed_successfuly", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get market_refreshed_successfuly() {
+      return intl.Intl.message("Market refreshed successfully", {name: "market_refreshed_successfuly", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get profile_settings_updated_successfully() {
+      return intl.Intl.message("Profile settings updated successfully", {name: "profile_settings_updated_successfully", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get payment_settings_updated_successfully() {
+      return intl.Intl.message("Payment settings updated successfully", {name: "payment_settings_updated_successfully", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get tracking_refreshed_successfuly() {
+      return intl.Intl.message("Tracking refreshed successfully", {name: "tracking_refreshed_successfuly", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get welcome() {
+      return intl.Intl.message("Welcome", {name: "welcome", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get wrong_email_or_password() {
+      return intl.Intl.message("Wrong phone or password", {name: "wrong_email_or_password", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get addresses_refreshed_successfuly() {
+      return intl.Intl.message("Addresses refreshed successfully", {name: "addresses_refreshed_successfuly", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get delivery_addresses() {
+      return intl.Intl.message("Delivery Addresses", {name: "delivery_addresses", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get add() {
+      return intl.Intl.message("Add", {name: "add", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get new_address_added_successfully() {
+      return intl.Intl.message("New Address added successfully", {name: "new_address_added_successfully", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get the_address_updated_successfully() {
+      return intl.Intl.message("The address updated successfully", {name: "the_address_updated_successfully", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get long_press_to_edit_item_swipe_item_to_delete_it() {
+      return intl.Intl.message("Long press to edit item, swipe item to delete it", {name: "long_press_to_edit_item_swipe_item_to_delete_it", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get add_delivery_address() {
+      return intl.Intl.message("Add Delivery Address", {name: "add_delivery_address", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get home_address() {
+      return intl.Intl.message("Home Address", {name: "home_address", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get description() {
+      return intl.Intl.message("Description", {name: "description", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get hint_full_address() {
+      return intl.Intl.message("12 Street, City 21663, Country", {name: "hint_full_address", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get full_address() {
+      return intl.Intl.message("Full Address", {name: "full_address", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get email_to_reset_password() {
+      return intl.Intl.message("Email to reset password", {name: "email_to_reset_password", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get send_password_reset_link() {
+      return intl.Intl.message("Send link", {name: "send_password_reset_link", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get i_remember_my_password_return_to_login() {
+      return intl.Intl.message("I remember my password return to login", {name: "i_remember_my_password_return_to_login", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get your_reset_link_has_been_sent_to_your_email() {
+      return intl.Intl.message("Your reset link has been sent to your email", {name: "your_reset_link_has_been_sent_to_your_email", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get error_verify_email_settings() {
+      return intl.Intl.message("Error! Verify email settings", {name: "error_verify_email_settings", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get guest() {
+      return intl.Intl.message("Guest", {name: "guest", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get you_must_signin_to_access_to_this_section() {
+      return intl.Intl.message("You must sign-in to access to this section", {name: "you_must_signin_to_access_to_this_section", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get tell_us_about_this_market() {
+      return intl.Intl.message("Tell us about this market", {name: "tell_us_about_this_market", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get how_would_you_rate_this_market_() {
+      return intl.Intl.message("How would you rate this market ?", {name: "how_would_you_rate_this_market_", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get tell_us_about_this_product() {
+      return intl.Intl.message("Tell us about this product", {name: "tell_us_about_this_product", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get the_market_has_been_rated_successfully() {
+      return intl.Intl.message("The market has been rated successfully", {name: "the_market_has_been_rated_successfully", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get the_product_has_been_rated_successfully() {
+      return intl.Intl.message("The product has been rated successfully", {name: "the_product_has_been_rated_successfully", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get reviews_refreshed_successfully() {
+      return intl.Intl.message("Reviews refreshed successfully!", {name: "reviews_refreshed_successfully", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get delivery_fee() {
+      return intl.Intl.message("Delivery Fee", {name: "delivery_fee", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get order_status_changed() {
+      return intl.Intl.message("Order status changed", {name: "order_status_changed", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get new_order_from_client() {
+      return intl.Intl.message("New order from client", {name: "new_order_from_client", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get shopping() {
+      return intl.Intl.message("Shopping", {name: "shopping", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get delivery_or_pickup() {
+      return intl.Intl.message("Delivery or Pickup", {name: "delivery_or_pickup", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get payment_card_updated_successfully() {
+      return intl.Intl.message("Payment card updated successfully", {name: "payment_card_updated_successfully", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get deliverable() {
+      return intl.Intl.message("Deliverable", {name: "deliverable", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get not_deliverable() {
+      return intl.Intl.message("Not Deliverable", {name: "not_deliverable", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get items() {
+      return intl.Intl.message("Items", {name: "items", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get delivery() {
+      return intl.Intl.message("Delivery", {name: "delivery", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get pickup() {
+      return intl.Intl.message("Pickup", {name: "pickup", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get closed() {
+      return intl.Intl.message("Closed", {name: "closed", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get open() {
+      return intl.Intl.message("Open", {name: "open", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get km() {
+      return intl.Intl.message("Km", {name: "km", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get mi() {
+      return intl.Intl.message("mi", {name: "mi", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get delivery_address() {
+      return intl.Intl.message("Delivery Address", {name: "delivery_address", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get current_location() {
+      return intl.Intl.message("Current location", {name: "current_location", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get delivery_address_removed_successfully() {
+      return intl.Intl.message("Delivery Address removed successfully", {name: "delivery_address_removed_successfully", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get add_new_delivery_address() {
+      return intl.Intl.message("Add new delivery address", {name: "add_new_delivery_address", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get markets_near_to_your_current_location() {
+      return intl.Intl.message("Markets near to your current location", {name: "markets_near_to_your_current_location", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get markets_near_to() {
+      return intl.Intl.message("Markets near to", {name: "markets_near_to", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get near_to() {
+      return intl.Intl.message("Near to", {name: "near_to", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get near_to_your_current_location() {
+      return intl.Intl.message("Near to your current location", {name: "near_to_your_current_location", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get pickup_your_product_from_the_market() {
+      return intl.Intl.message("Pickup your product from the market", {name: "pickup_your_product_from_the_market", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get confirm_your_delivery_address() {
+      return intl.Intl.message("Confirm your delivery address", {name: "confirm_your_delivery_address", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get filter() {
+      return intl.Intl.message("Filter", {name: "filter", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get clear() {
+      return intl.Intl.message("Clear", {name: "clear", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get apply_filters() {
+      return intl.Intl.message("Apply Filters", {name: "apply_filters", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get opened_markets() {
+      return intl.Intl.message("Opened Markets", {name: "opened_markets", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get fields() {
+      return intl.Intl.message("Fields", {name: "fields", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get this_product_was_added_to_cart() {
+      return intl.Intl.message("This product was added to cart", {name: "this_product_was_added_to_cart", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get products_result() {
+      return intl.Intl.message("Products result", {name: "products_result", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get products_results() {
+      return intl.Intl.message("Products Results", {name: "products_results", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get markets_results() {
+      return intl.Intl.message("Markets Results", {name: "markets_results", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get all() {
+      return intl.Intl.message("All", {name: "all", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get this_market_is_closed_() {
+      return intl.Intl.message("This market is closed !", {name: "this_market_is_closed_", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get unknown() {
+      return intl.Intl.message("Unknown", {name: "unknown", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get how_would_you_rate_this_market() {
+      return intl.Intl.message("How would you rate this market ?", {name: "how_would_you_rate_this_market", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get click_on_the_stars_below_to_leave_comments() {
+      return intl.Intl.message("Click on the stars below to leave comments", {name: "click_on_the_stars_below_to_leave_comments", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get click_to_confirm_your_address_and_pay_or_long_press() {
+      return intl.Intl.message("Click to confirm your address and pay or Long press to edit your address", {name: "click_to_confirm_your_address_and_pay_or_long_press", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get visa_card() {
+      return intl.Intl.message("Visa Card", {name: "visa_card", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get mastercard() {
+      return intl.Intl.message("MasterCard", {name: "mastercard", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get paypal() {
+      return intl.Intl.message("PayPal", {name: "paypal", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get pay_on_pickup() {
+      return intl.Intl.message("Pay on Pickup", {name: "pay_on_pickup", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get click_to_pay_with_your_visa_card() {
+      return intl.Intl.message("Click to pay with your Visa Card", {name: "click_to_pay_with_your_visa_card", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get click_to_pay_with_your_mastercard() {
+      return intl.Intl.message("Click to pay with your MasterCard", {name: "click_to_pay_with_your_mastercard", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get click_to_pay_with_your_paypal_account() {
+      return intl.Intl.message("Click to pay with your PayPal account", {name: "click_to_pay_with_your_paypal_account", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get click_to_pay_cash_on_delivery() {
+      return intl.Intl.message("Click to pay cash on delivery", {name: "click_to_pay_cash_on_delivery", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get click_to_pay_on_pickup() {
+      return intl.Intl.message("Click to pay on pickup", {name: "click_to_pay_on_pickup", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get this_email_account_exists() {
+      return intl.Intl.message("This email account exists", {name: "this_email_account_exists", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get this_account_not_exist() {
+      return intl.Intl.message("This account not exist", {name: "this_account_not_exist", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get card_number() {
+      return intl.Intl.message("CARD NUMBER", {name: "card_number", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get expiry_date() {
+      return intl.Intl.message("EXPIRY DATE", {name: "expiry_date", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get cvv() {
+      return intl.Intl.message("CVV", {name: "cvv", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get your_credit_card_not_valid() {
+      return intl.Intl.message("Your credit card not valid", {name: "your_credit_card_not_valid", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get number() {
+      return intl.Intl.message("Number", {name: "number", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get exp_date() {
+      return intl.Intl.message("Exp Date", {name: "exp_date", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get cvc() {
+      return intl.Intl.message("CVC", {name: "cvc", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get completeYourProfileDetailsToContinue() {
+      return intl.Intl.message("Complete your profile details to continue", {name: "completeYourProfileDetailsToContinue", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get deliveryAddressOutsideTheDeliveryRangeOfThisMarkets() {
+      return intl.Intl.message("Delivery address outside the delivery range of this markets.", {name: "deliveryAddressOutsideTheDeliveryRangeOfThisMarkets", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get thisMarketNotSupportDeliveryMethod() {
+      return intl.Intl.message("This market not support delivery method.", {name: "thisMarketNotSupportDeliveryMethod", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get oneOrMoreProductsInYourCartNotDeliverable() {
+      return intl.Intl.message("One or more products in your cart not deliverable.", {name: "oneOrMoreProductsInYourCartNotDeliverable", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get deliveryMethodNotAllowed() {
+      return intl.Intl.message("Delivery method not allowed!", {name: "deliveryMethodNotAllowed", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get viewDetails() {
+      return intl.Intl.message("View Details", {name: "viewDetails", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get youDontHaveAnyOrder() {
+      return intl.Intl.message("You don't  have any order", {name: "youDontHaveAnyOrder", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get orderDetails() {
+      return intl.Intl.message("Order Details", {name: "orderDetails", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get order() {
+      return intl.Intl.message("Order", {name: "order", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get details() {
+      return intl.Intl.message("Details", {name: "details", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get canceled() {
+      return intl.Intl.message("Canceled", {name: "canceled", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get cancelOrder() {
+      return intl.Intl.message("Cancel Order", {name: "cancelOrder", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get view() {
+      return intl.Intl.message("View", {name: "view", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get yes() {
+      return intl.Intl.message("Yes", {name: "yes", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get areYouSureYouWantToCancelThisOrder() {
+      return intl.Intl.message("Are you sure you want to cancel this order?", {name: "areYouSureYouWantToCancelThisOrder", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    orderThisorderidHasBeenCanceled(id) {
+      return intl.Intl.message("Order: #" + dart.str(id) + " has been canceled", {name: "orderThisorderidHasBeenCanceled", desc: "", args: T.JSArrayOfObjectL().of([id])});
+    }
+    get clickOnTheProductToGetMoreDetailsAboutIt() {
+      return intl.Intl.message("Click on the product to get more details about it", {name: "clickOnTheProductToGetMoreDetailsAboutIt", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get tapAgainToLeave() {
+      return intl.Intl.message("Tap again to leave", {name: "tapAgainToLeave", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get favorites_refreshed_successfuly() {
+      return intl.Intl.message("Favorites refreshed successfully", {name: "favorites_refreshed_successfuly", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get faqsRefreshedSuccessfuly() {
+      return intl.Intl.message("Faqs refreshed successfully", {name: "faqsRefreshedSuccessfuly", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get thisProductWasAddedToFavorite() {
+      return intl.Intl.message("This product was added to favorite", {name: "thisProductWasAddedToFavorite", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get thisProductWasRemovedFromFavorites() {
+      return intl.Intl.message("This product was removed from favorites", {name: "thisProductWasRemovedFromFavorites", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get productRefreshedSuccessfuly() {
+      return intl.Intl.message("Product refreshed successfully", {name: "productRefreshedSuccessfuly", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get razorpayPayment() {
+      return intl.Intl.message("RazorPay Payment", {name: "razorpayPayment", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get razorpay() {
+      return intl.Intl.message("RazorPay", {name: "razorpay", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get clickToPayWithRazorpayMethod() {
+      return intl.Intl.message("Click to pay with RazorPay method", {name: "clickToPayWithRazorpayMethod", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get products() {
+      return intl.Intl.message("Products", {name: "products", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get validCouponCode() {
+      return intl.Intl.message("Valid Coupon", {name: "validCouponCode", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get invalidCouponCode() {
+      return intl.Intl.message("Invalid Coupon", {name: "invalidCouponCode", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get haveCouponCode() {
+      return intl.Intl.message("Have Coupon Code?", {name: "haveCouponCode", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get messages() {
+      return intl.Intl.message("Messages", {name: "messages", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get youDontHaveAnyConversations() {
+      return intl.Intl.message("You don't have any conversations", {name: "youDontHaveAnyConversations", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get newMessageFrom() {
+      return intl.Intl.message("New message from", {name: "newMessageFrom", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get forMoreDetailsPleaseChatWithOurManagers() {
+      return intl.Intl.message("For more details, please chat with our managers", {name: "forMoreDetailsPleaseChatWithOurManagers", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get signinToChatWithOurManagers() {
+      return intl.Intl.message("Sign-In to chat with our managers", {name: "signinToChatWithOurManagers", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get typeToStartChat() {
+      return intl.Intl.message("Type to start chat", {name: "typeToStartChat", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get makeItDefault() {
+      return intl.Intl.message("Make it default", {name: "makeItDefault", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get notValidAddress() {
+      return intl.Intl.message("Not valid address", {name: "notValidAddress", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get swipeLeftTheNotificationToDeleteOrReadUnreadIt() {
+      return intl.Intl.message("Swipe left the notification to delete or read / unread it", {name: "swipeLeftTheNotificationToDeleteOrReadUnreadIt", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get thisNotificationHasMarkedAsUnread() {
+      return intl.Intl.message("This notification has marked as unread", {name: "thisNotificationHasMarkedAsUnread", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get notificationWasRemoved() {
+      return intl.Intl.message("Notification was removed", {name: "notificationWasRemoved", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get thisNotificationHasMarkedAsRead() {
+      return intl.Intl.message("This notification has marked as read", {name: "thisNotificationHasMarkedAsRead", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get free() {
+      return intl.Intl.message("Free", {name: "free", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get privacy_policy() {
+      return intl.Intl.message("Privacy and Policy", {name: "privacy_policy", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get contact_us() {
+      return intl.Intl.message("Contact Us", {name: "contact_us", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get phone_number() {
+      return intl.Intl.message("Phone Number", {name: "phone_number", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get name() {
+      return intl.Intl.message("Name", {name: "name", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get name_should_be_2() {
+      return intl.Intl.message("The name should be more than 2 characters.", {name: "name_should_be_2", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get confirm_password() {
+      return intl.Intl.message("Confirm Password", {name: "confirm_password", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get current_orders() {
+      return intl.Intl.message("Current", {name: "current_orders", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get completed_orders() {
+      return intl.Intl.message("Completed", {name: "completed_orders", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get pending_orders() {
+      return intl.Intl.message("Pending", {name: "pending_orders", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get ok() {
+      return intl.Intl.message("Ok", {name: "ok", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get do_you_accept_order() {
+      return intl.Intl.message("Do you really want to accept this order?", {name: "do_you_accept_order", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get accept() {
+      return intl.Intl.message("Accept", {name: "accept", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get confirm() {
+      return intl.Intl.message("Confirm", {name: "confirm", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get veri_code() {
+      return intl.Intl.message("Verification Code", {name: "veri_code", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get please_input_phone() {
+      return intl.Intl.message("Please input your phone number and get sms verification code.", {name: "please_input_phone", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get sent_a_veri_code() {
+      return intl.Intl.message("Sent a verification code to verify your account", {name: "sent_a_veri_code", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get send_code() {
+      return intl.Intl.message("Send Code", {name: "send_code", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get resend() {
+      return intl.Intl.message("Resend", {name: "resend", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get incorrect_veri_code() {
+      return intl.Intl.message("Incorrect your verification code, please retype your code.", {name: "incorrect_veri_code", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get enter_your_code() {
+      return intl.Intl.message("Enter your Verification Code", {name: "enter_your_code", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get phone_10_digits() {
+      return intl.Intl.message("Phone number should be more than 10 digits.", {name: "phone_10_digits", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get incorrect_phone() {
+      return intl.Intl.message("Incorrect phone number", {name: "incorrect_phone", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get est_price() {
+      return intl.Intl.message("Estimated price", {name: "est_price", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get confirmed_price() {
+      return intl.Intl.message("Confirmed price", {name: "confirmed_price", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get final_price() {
+      return intl.Intl.message("Final price", {name: "final_price", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get order_search() {
+      return intl.Intl.message("Order Search", {name: "order_search", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get gender() {
+      return intl.Intl.message("Gender", {name: "gender", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get female() {
+      return intl.Intl.message("Female", {name: "female", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get male() {
+      return intl.Intl.message("Male", {name: "male", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get change_password() {
+      return intl.Intl.message("Change Password", {name: "change_password", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get near_to_location() {
+      return intl.Intl.message("Near to your location", {name: "near_to_location", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get sort_by_price() {
+      return intl.Intl.message("Sort by order price", {name: "sort_by_price", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get edit_profile() {
+      return intl.Intl.message("Edit", {name: "edit_profile", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+    get veri_code_6_digits() {
+      return intl.Intl.message("Verification Code should be 6 digits.", {name: "veri_code_6_digits", desc: "", args: T.JSArrayOfObjectL().of([])});
+    }
+  };
+  (l10n.S.new = function() {
+    ;
+  }).prototype = l10n.S.prototype;
+  dart.addTypeTests(l10n.S);
+  dart.addTypeCaches(l10n.S);
+  dart.setMethodSignature(l10n.S, () => ({
+    __proto__: dart.getMethods(l10n.S.__proto__),
+    the_product_was_removed_from_your_cart: dart.fnType(dart.legacy(core.String), [dart.legacy(core.Object)]),
+    orderThisorderidHasBeenCanceled: dart.fnType(dart.legacy(core.String), [dart.legacy(core.Object)])
+  }));
+  dart.setGetterSignature(l10n.S, () => ({
+    __proto__: dart.getGetters(l10n.S.__proto__),
+    search_for_markets_or_products: dart.legacy(core.String),
+    top_markets: dart.legacy(core.String),
+    ordered_by_nearby_first: dart.legacy(core.String),
+    trending_this_week: dart.legacy(core.String),
+    product_categories: dart.legacy(core.String),
+    most_popular: dart.legacy(core.String),
+    recent_reviews: dart.legacy(core.String),
+    login: dart.legacy(core.String),
+    skip: dart.legacy(core.String),
+    about: dart.legacy(core.String),
+    submit: dart.legacy(core.String),
+    verify: dart.legacy(core.String),
+    select_your_preferred_languages: dart.legacy(core.String),
+    order_id: dart.legacy(core.String),
+    category: dart.legacy(core.String),
+    checkout: dart.legacy(core.String),
+    payment_mode: dart.legacy(core.String),
+    select_your_preferred_payment_mode: dart.legacy(core.String),
+    or_checkout_with: dart.legacy(core.String),
+    subtotal: dart.legacy(core.String),
+    total: dart.legacy(core.String),
+    confirm_payment: dart.legacy(core.String),
+    information: dart.legacy(core.String),
+    featured_products: dart.legacy(core.String),
+    what_they_say: dart.legacy(core.String),
+    favorite_products: dart.legacy(core.String),
+    options: dart.legacy(core.String),
+    select_options_to_add_them_on_the_product: dart.legacy(core.String),
+    reviews: dart.legacy(core.String),
+    quantity: dart.legacy(core.String),
+    add_to_cart: dart.legacy(core.String),
+    faq: dart.legacy(core.String),
+    help_supports: dart.legacy(core.String),
+    app_language: dart.legacy(core.String),
+    i_forgot_password: dart.legacy(core.String),
+    i_dont_have_an_account: dart.legacy(core.String),
+    maps_explorer: dart.legacy(core.String),
+    all_product: dart.legacy(core.String),
+    notifications: dart.legacy(core.String),
+    confirmation: dart.legacy(core.String),
+    your_order_has_been_successfully_submitted: dart.legacy(core.String),
+    tax: dart.legacy(core.String),
+    my_orders: dart.legacy(core.String),
+    profile: dart.legacy(core.String),
+    favorites: dart.legacy(core.String),
+    home: dart.legacy(core.String),
+    payment_options: dart.legacy(core.String),
+    cash_on_delivery: dart.legacy(core.String),
+    paypal_payment: dart.legacy(core.String),
+    recent_orders: dart.legacy(core.String),
+    settings: dart.legacy(core.String),
+    profile_settings: dart.legacy(core.String),
+    full_name: dart.legacy(core.String),
+    email: dart.legacy(core.String),
+    phone: dart.legacy(core.String),
+    address: dart.legacy(core.String),
+    payments_settings: dart.legacy(core.String),
+    default_credit_card: dart.legacy(core.String),
+    app_settings: dart.legacy(core.String),
+    languages: dart.legacy(core.String),
+    english: dart.legacy(core.String),
+    help_support: dart.legacy(core.String),
+    register: dart.legacy(core.String),
+    lets_start_with_register: dart.legacy(core.String),
+    should_be_more_than_3_letters: dart.legacy(core.String),
+    john_doe: dart.legacy(core.String),
+    should_be_a_valid_email: dart.legacy(core.String),
+    should_be_more_than_6_letters: dart.legacy(core.String),
+    password: dart.legacy(core.String),
+    i_have_account_back_to_login: dart.legacy(core.String),
+    tracking_order: dart.legacy(core.String),
+    discover__explorer: dart.legacy(core.String),
+    you_can_discover_markets: dart.legacy(core.String),
+    reset_cart: dart.legacy(core.String),
+    cart: dart.legacy(core.String),
+    shopping_cart: dart.legacy(core.String),
+    verify_your_quantity_and_click_checkout: dart.legacy(core.String),
+    lets_start_with_login: dart.legacy(core.String),
+    should_be_more_than_3_characters: dart.legacy(core.String),
+    you_must_add_products_of_the_same_markets_choose_one: dart.legacy(core.String),
+    reset_your_cart_and_order_meals_form_this_market: dart.legacy(core.String),
+    keep_your_old_meals_of_this_market: dart.legacy(core.String),
+    reset: dart.legacy(core.String),
+    close: dart.legacy(core.String),
+    application_preferences: dart.legacy(core.String),
+    help__support: dart.legacy(core.String),
+    light_mode: dart.legacy(core.String),
+    dark_mode: dart.legacy(core.String),
+    log_out: dart.legacy(core.String),
+    version: dart.legacy(core.String),
+    dont_have_any_item_in_your_cart: dart.legacy(core.String),
+    start_exploring: dart.legacy(core.String),
+    dont_have_any_item_in_the_notification_list: dart.legacy(core.String),
+    payment_settings: dart.legacy(core.String),
+    not_a_valid_number: dart.legacy(core.String),
+    not_a_valid_date: dart.legacy(core.String),
+    not_a_valid_cvc: dart.legacy(core.String),
+    cancel: dart.legacy(core.String),
+    save: dart.legacy(core.String),
+    edit: dart.legacy(core.String),
+    not_a_valid_full_name: dart.legacy(core.String),
+    email_address: dart.legacy(core.String),
+    not_a_valid_email: dart.legacy(core.String),
+    not_a_valid_phone: dart.legacy(core.String),
+    not_a_valid_address: dart.legacy(core.String),
+    not_a_valid_biography: dart.legacy(core.String),
+    your_biography: dart.legacy(core.String),
+    your_address: dart.legacy(core.String),
+    search: dart.legacy(core.String),
+    recents_search: dart.legacy(core.String),
+    verify_your_internet_connection: dart.legacy(core.String),
+    carts_refreshed_successfuly: dart.legacy(core.String),
+    category_refreshed_successfuly: dart.legacy(core.String),
+    notifications_refreshed_successfuly: dart.legacy(core.String),
+    order_refreshed_successfuly: dart.legacy(core.String),
+    orders_refreshed_successfuly: dart.legacy(core.String),
+    market_refreshed_successfuly: dart.legacy(core.String),
+    profile_settings_updated_successfully: dart.legacy(core.String),
+    payment_settings_updated_successfully: dart.legacy(core.String),
+    tracking_refreshed_successfuly: dart.legacy(core.String),
+    welcome: dart.legacy(core.String),
+    wrong_email_or_password: dart.legacy(core.String),
+    addresses_refreshed_successfuly: dart.legacy(core.String),
+    delivery_addresses: dart.legacy(core.String),
+    add: dart.legacy(core.String),
+    new_address_added_successfully: dart.legacy(core.String),
+    the_address_updated_successfully: dart.legacy(core.String),
+    long_press_to_edit_item_swipe_item_to_delete_it: dart.legacy(core.String),
+    add_delivery_address: dart.legacy(core.String),
+    home_address: dart.legacy(core.String),
+    description: dart.legacy(core.String),
+    hint_full_address: dart.legacy(core.String),
+    full_address: dart.legacy(core.String),
+    email_to_reset_password: dart.legacy(core.String),
+    send_password_reset_link: dart.legacy(core.String),
+    i_remember_my_password_return_to_login: dart.legacy(core.String),
+    your_reset_link_has_been_sent_to_your_email: dart.legacy(core.String),
+    error_verify_email_settings: dart.legacy(core.String),
+    guest: dart.legacy(core.String),
+    you_must_signin_to_access_to_this_section: dart.legacy(core.String),
+    tell_us_about_this_market: dart.legacy(core.String),
+    how_would_you_rate_this_market_: dart.legacy(core.String),
+    tell_us_about_this_product: dart.legacy(core.String),
+    the_market_has_been_rated_successfully: dart.legacy(core.String),
+    the_product_has_been_rated_successfully: dart.legacy(core.String),
+    reviews_refreshed_successfully: dart.legacy(core.String),
+    delivery_fee: dart.legacy(core.String),
+    order_status_changed: dart.legacy(core.String),
+    new_order_from_client: dart.legacy(core.String),
+    shopping: dart.legacy(core.String),
+    delivery_or_pickup: dart.legacy(core.String),
+    payment_card_updated_successfully: dart.legacy(core.String),
+    deliverable: dart.legacy(core.String),
+    not_deliverable: dart.legacy(core.String),
+    items: dart.legacy(core.String),
+    delivery: dart.legacy(core.String),
+    pickup: dart.legacy(core.String),
+    closed: dart.legacy(core.String),
+    open: dart.legacy(core.String),
+    km: dart.legacy(core.String),
+    mi: dart.legacy(core.String),
+    delivery_address: dart.legacy(core.String),
+    current_location: dart.legacy(core.String),
+    delivery_address_removed_successfully: dart.legacy(core.String),
+    add_new_delivery_address: dart.legacy(core.String),
+    markets_near_to_your_current_location: dart.legacy(core.String),
+    markets_near_to: dart.legacy(core.String),
+    near_to: dart.legacy(core.String),
+    near_to_your_current_location: dart.legacy(core.String),
+    pickup_your_product_from_the_market: dart.legacy(core.String),
+    confirm_your_delivery_address: dart.legacy(core.String),
+    filter: dart.legacy(core.String),
+    clear: dart.legacy(core.String),
+    apply_filters: dart.legacy(core.String),
+    opened_markets: dart.legacy(core.String),
+    fields: dart.legacy(core.String),
+    this_product_was_added_to_cart: dart.legacy(core.String),
+    products_result: dart.legacy(core.String),
+    products_results: dart.legacy(core.String),
+    markets_results: dart.legacy(core.String),
+    all: dart.legacy(core.String),
+    this_market_is_closed_: dart.legacy(core.String),
+    unknown: dart.legacy(core.String),
+    how_would_you_rate_this_market: dart.legacy(core.String),
+    click_on_the_stars_below_to_leave_comments: dart.legacy(core.String),
+    click_to_confirm_your_address_and_pay_or_long_press: dart.legacy(core.String),
+    visa_card: dart.legacy(core.String),
+    mastercard: dart.legacy(core.String),
+    paypal: dart.legacy(core.String),
+    pay_on_pickup: dart.legacy(core.String),
+    click_to_pay_with_your_visa_card: dart.legacy(core.String),
+    click_to_pay_with_your_mastercard: dart.legacy(core.String),
+    click_to_pay_with_your_paypal_account: dart.legacy(core.String),
+    click_to_pay_cash_on_delivery: dart.legacy(core.String),
+    click_to_pay_on_pickup: dart.legacy(core.String),
+    this_email_account_exists: dart.legacy(core.String),
+    this_account_not_exist: dart.legacy(core.String),
+    card_number: dart.legacy(core.String),
+    expiry_date: dart.legacy(core.String),
+    cvv: dart.legacy(core.String),
+    your_credit_card_not_valid: dart.legacy(core.String),
+    number: dart.legacy(core.String),
+    exp_date: dart.legacy(core.String),
+    cvc: dart.legacy(core.String),
+    completeYourProfileDetailsToContinue: dart.legacy(core.String),
+    deliveryAddressOutsideTheDeliveryRangeOfThisMarkets: dart.legacy(core.String),
+    thisMarketNotSupportDeliveryMethod: dart.legacy(core.String),
+    oneOrMoreProductsInYourCartNotDeliverable: dart.legacy(core.String),
+    deliveryMethodNotAllowed: dart.legacy(core.String),
+    viewDetails: dart.legacy(core.String),
+    youDontHaveAnyOrder: dart.legacy(core.String),
+    orderDetails: dart.legacy(core.String),
+    order: dart.legacy(core.String),
+    details: dart.legacy(core.String),
+    canceled: dart.legacy(core.String),
+    cancelOrder: dart.legacy(core.String),
+    view: dart.legacy(core.String),
+    yes: dart.legacy(core.String),
+    areYouSureYouWantToCancelThisOrder: dart.legacy(core.String),
+    clickOnTheProductToGetMoreDetailsAboutIt: dart.legacy(core.String),
+    tapAgainToLeave: dart.legacy(core.String),
+    favorites_refreshed_successfuly: dart.legacy(core.String),
+    faqsRefreshedSuccessfuly: dart.legacy(core.String),
+    thisProductWasAddedToFavorite: dart.legacy(core.String),
+    thisProductWasRemovedFromFavorites: dart.legacy(core.String),
+    productRefreshedSuccessfuly: dart.legacy(core.String),
+    razorpayPayment: dart.legacy(core.String),
+    razorpay: dart.legacy(core.String),
+    clickToPayWithRazorpayMethod: dart.legacy(core.String),
+    products: dart.legacy(core.String),
+    validCouponCode: dart.legacy(core.String),
+    invalidCouponCode: dart.legacy(core.String),
+    haveCouponCode: dart.legacy(core.String),
+    messages: dart.legacy(core.String),
+    youDontHaveAnyConversations: dart.legacy(core.String),
+    newMessageFrom: dart.legacy(core.String),
+    forMoreDetailsPleaseChatWithOurManagers: dart.legacy(core.String),
+    signinToChatWithOurManagers: dart.legacy(core.String),
+    typeToStartChat: dart.legacy(core.String),
+    makeItDefault: dart.legacy(core.String),
+    notValidAddress: dart.legacy(core.String),
+    swipeLeftTheNotificationToDeleteOrReadUnreadIt: dart.legacy(core.String),
+    thisNotificationHasMarkedAsUnread: dart.legacy(core.String),
+    notificationWasRemoved: dart.legacy(core.String),
+    thisNotificationHasMarkedAsRead: dart.legacy(core.String),
+    free: dart.legacy(core.String),
+    privacy_policy: dart.legacy(core.String),
+    contact_us: dart.legacy(core.String),
+    phone_number: dart.legacy(core.String),
+    name: dart.legacy(core.String),
+    name_should_be_2: dart.legacy(core.String),
+    confirm_password: dart.legacy(core.String),
+    current_orders: dart.legacy(core.String),
+    completed_orders: dart.legacy(core.String),
+    pending_orders: dart.legacy(core.String),
+    ok: dart.legacy(core.String),
+    do_you_accept_order: dart.legacy(core.String),
+    accept: dart.legacy(core.String),
+    confirm: dart.legacy(core.String),
+    veri_code: dart.legacy(core.String),
+    please_input_phone: dart.legacy(core.String),
+    sent_a_veri_code: dart.legacy(core.String),
+    send_code: dart.legacy(core.String),
+    resend: dart.legacy(core.String),
+    incorrect_veri_code: dart.legacy(core.String),
+    enter_your_code: dart.legacy(core.String),
+    phone_10_digits: dart.legacy(core.String),
+    incorrect_phone: dart.legacy(core.String),
+    est_price: dart.legacy(core.String),
+    confirmed_price: dart.legacy(core.String),
+    final_price: dart.legacy(core.String),
+    order_search: dart.legacy(core.String),
+    gender: dart.legacy(core.String),
+    female: dart.legacy(core.String),
+    male: dart.legacy(core.String),
+    change_password: dart.legacy(core.String),
+    near_to_location: dart.legacy(core.String),
+    sort_by_price: dart.legacy(core.String),
+    edit_profile: dart.legacy(core.String),
+    veri_code_6_digits: dart.legacy(core.String)
+  }));
+  dart.setLibraryUri(l10n.S, I[0]);
+  dart.defineLazy(l10n.S, {
+    /*l10n.S.current*/get current() {
+      return null;
+    },
+    set current(_) {},
+    /*l10n.S.delegate*/get delegate() {
+      return C[0] || CT.C0;
+    }
+  }, true);
+  var Locale__countryCode = dart.privateName(ui, "Locale._countryCode");
+  var Locale_scriptCode = dart.privateName(ui, "Locale.scriptCode");
+  var Locale__languageCode = dart.privateName(ui, "Locale._languageCode");
+  var _isSuppo

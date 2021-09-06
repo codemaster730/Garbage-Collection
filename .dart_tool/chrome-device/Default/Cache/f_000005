@@ -1,0 +1,245 @@
+define(['dart_sdk', 'packages/flutter/src/services/system_channels.dart', 'packages/http/http.dart'], (function load__packages__global_configuration__global_configuration_dart(dart_sdk, packages__flutter__src__services__system_channels$46dart, packages__http__http$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _js_helper = dart_sdk._js_helper;
+  const ui = dart_sdk.ui;
+  const convert = dart_sdk.convert;
+  const async = dart_sdk.async;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const asset_bundle = packages__flutter__src__services__system_channels$46dart.src__services__asset_bundle;
+  const http = packages__http__http$46dart.http;
+  var global_configuration = Object.create(dart.library);
+  var $substring = dartx.substring;
+  var $addAll = dartx.addAll;
+  var $endsWith = dartx.endsWith;
+  var $putIfAbsent = dartx.putIfAbsent;
+  var $_get = dartx._get;
+  var $split = dartx.split;
+  var $forEach = dartx.forEach;
+  var $clear = dartx.clear;
+  var $runtimeType = dartx.runtimeType;
+  var $update = dartx.update;
+  dart._checkModuleNullSafetyMode(false);
+  var T$ = {
+    StringL: () => (T$.StringL = dart.constFn(dart.legacy(core.String)))(),
+    LinkedMapOfStringL$dynamic: () => (T$.LinkedMapOfStringL$dynamic = dart.constFn(_js_helper.LinkedMap$(T$.StringL(), dart.dynamic)))(),
+    MapOfStringL$dynamic: () => (T$.MapOfStringL$dynamic = dart.constFn(core.Map$(T$.StringL(), dart.dynamic)))(),
+    MapLOfStringL$dynamic: () => (T$.MapLOfStringL$dynamic = dart.constFn(dart.legacy(T$.MapOfStringL$dynamic())))(),
+    GlobalConfigurationL: () => (T$.GlobalConfigurationL = dart.constFn(dart.legacy(global_configuration.GlobalConfiguration)))(),
+    VoidToMapLOfStringL$dynamic: () => (T$.VoidToMapLOfStringL$dynamic = dart.constFn(dart.fnType(T$.MapLOfStringL$dynamic(), [])))(),
+    StringLToNull: () => (T$.StringLToNull = dart.constFn(dart.fnType(core.Null, [T$.StringL()])))(),
+    boolL: () => (T$.boolL = dart.constFn(dart.legacy(core.bool)))(),
+    intL: () => (T$.intL = dart.constFn(dart.legacy(core.int)))(),
+    doubleL: () => (T$.doubleL = dart.constFn(dart.legacy(core.double)))(),
+    dynamicTodynamic: () => (T$.dynamicTodynamic = dart.constFn(dart.fnType(dart.dynamic, [dart.dynamic])))(),
+    VoidTodynamic: () => (T$.VoidTodynamic = dart.constFn(dart.fnType(dart.dynamic, [])))(),
+    StringLAndStringLToNull: () => (T$.StringLAndStringLToNull = dart.constFn(dart.fnType(core.Null, [T$.StringL(), T$.StringL()])))(),
+    LinkedMapOfStringL$StringL: () => (T$.LinkedMapOfStringL$StringL = dart.constFn(_js_helper.LinkedMap$(T$.StringL(), T$.StringL())))(),
+    VoidToStringL: () => (T$.VoidToStringL = dart.constFn(dart.fnType(T$.StringL(), [])))(),
+    FutureOrOfMapLOfStringL$dynamic: () => (T$.FutureOrOfMapLOfStringL$dynamic = dart.constFn(async.FutureOr$(T$.MapLOfStringL$dynamic())))(),
+    FutureOrLOfMapLOfStringL$dynamic: () => (T$.FutureOrLOfMapLOfStringL$dynamic = dart.constFn(dart.legacy(T$.FutureOrOfMapLOfStringL$dynamic())))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T$);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  var C = [];
+  var I = ["package:global_configuration/global_configuration.dart"];
+  var appConfig = dart.privateName(global_configuration, "GlobalConfiguration.appConfig");
+  var _hexStringToColor = dart.privateName(global_configuration, "_hexStringToColor");
+  var _getFromUrl = dart.privateName(global_configuration, "_getFromUrl");
+  global_configuration.GlobalConfiguration = class GlobalConfiguration extends core.Object {
+    get appConfig() {
+      return this[appConfig];
+    }
+    set appConfig(value) {
+      this[appConfig] = value;
+    }
+    [_hexStringToColor](code) {
+      return new ui.Color.new(dart.notNull(core.int.parse(code[$substring](1, 7), {radix: 16})) + 4278190080);
+    }
+    static new() {
+      return global_configuration.GlobalConfiguration._singleton;
+    }
+    loadFromMap(map) {
+      this.appConfig[$addAll](map);
+      return global_configuration.GlobalConfiguration._singleton;
+    }
+    loadFromAsset(name) {
+      return async.async(T$.GlobalConfigurationL(), (function* loadFromAsset() {
+        if (!name[$endsWith](".json")) {
+          name = dart.str(name) + ".json";
+        }
+        let content = (yield asset_bundle.rootBundle.loadString("assets/cfg/" + dart.str(name)));
+        let configAsMap = T$.MapLOfStringL$dynamic().as(convert.json.decode(content));
+        this.appConfig[$addAll](configAsMap);
+        return global_configuration.GlobalConfiguration._singleton;
+      }).bind(this));
+    }
+    loadFromPath(path) {
+      return async.async(T$.GlobalConfigurationL(), (function* loadFromPath() {
+        let content = (yield asset_bundle.rootBundle.loadString(path));
+        let configAsMap = T$.MapLOfStringL$dynamic().as(convert.json.decode(content));
+        this.appConfig[$addAll](configAsMap);
+        return global_configuration.GlobalConfiguration._singleton;
+      }).bind(this));
+    }
+    loadFromPathIntoKey(path, key) {
+      return async.async(T$.GlobalConfigurationL(), (function* loadFromPathIntoKey() {
+        let content = (yield asset_bundle.rootBundle.loadString(path));
+        let configAsMap = T$.MapLOfStringL$dynamic().as(convert.json.decode(content));
+        this.appConfig[$putIfAbsent](key, dart.fn(() => configAsMap, T$.VoidToMapLOfStringL$dynamic()));
+        return global_configuration.GlobalConfiguration._singleton;
+      }).bind(this));
+    }
+    loadFromUrl(url, opts) {
+      let queryParameters = opts && 'queryParameters' in opts ? opts.queryParameters : null;
+      let headers = opts && 'headers' in opts ? opts.headers : null;
+      return async.async(T$.GlobalConfigurationL(), (function* loadFromUrl() {
+        let configAsMap = (yield this[_getFromUrl](url, {queryParameters: queryParameters, headers: headers}));
+        this.appConfig[$addAll](configAsMap);
+        return global_configuration.GlobalConfiguration._singleton;
+      }).bind(this));
+    }
+    loadFromUrlIntoKey(url, key, opts) {
+      let queryParameters = opts && 'queryParameters' in opts ? opts.queryParameters : null;
+      let headers = opts && 'headers' in opts ? opts.headers : null;
+      return async.async(T$.GlobalConfigurationL(), (function* loadFromUrlIntoKey() {
+        let configAsMap = (yield this[_getFromUrl](url, {queryParameters: queryParameters, headers: headers}));
+        this.appConfig[$putIfAbsent](key, dart.fn(() => configAsMap, T$.VoidToMapLOfStringL$dynamic()));
+        return global_configuration.GlobalConfiguration._singleton;
+      }).bind(this));
+    }
+    get(key) {
+      return this.appConfig[$_get](key);
+    }
+    getValue(T, key) {
+      return dart.legacy(T).as(this.appConfig[$_get](key));
+    }
+    getDeepValue(T, keyPath) {
+      let _value = null;
+      keyPath[$split](":")[$forEach](dart.fn(element => {
+        if (_value == null)
+          _value = this.appConfig[$_get](element);
+        else
+          _value = dart.dsend(_value, '_get', [element]);
+      }, T$.StringLToNull()));
+      if (_value != null) {
+        if (dart.wrapType(dart.legacy(T))._equals(dart.wrapType(ui.Color))) _value = this[_hexStringToColor](T$.StringL().as(_value));
+        return dart.legacy(T).as(_value);
+      }
+      return null;
+    }
+    getBool(key) {
+      return T$.boolL().as(this.appConfig[$_get](key));
+    }
+    getInt(key) {
+      return T$.intL().as(this.appConfig[$_get](key));
+    }
+    getDouble(key) {
+      return T$.doubleL().as(this.appConfig[$_get](key));
+    }
+    getString(key) {
+      return T$.StringL().as(this.appConfig[$_get](key));
+    }
+    clear() {
+      return this.appConfig[$clear]();
+    }
+    setValue(key, value) {
+      return !dart.equals(dart.runtimeType(value), dart.runtimeType(this.appConfig[$_get](key))) ? dart.throw("wrong type") : this.appConfig[$update](T$.StringL().as(key), dart.fn(dynamic => value, T$.dynamicTodynamic()));
+    }
+    updateValue(key, value) {
+      if (this.appConfig[$_get](key) != null && !dart.equals(dart.runtimeType(value), dart.runtimeType(this.appConfig[$_get](key)))) {
+        dart.throw("The persistent type of " + dart.str(dart.runtimeType(this.appConfig[$_get](key))) + " does not match the given type " + dart.str(dart.runtimeType(value)));
+      }
+      this.appConfig[$update](key, dart.fn(dynamic => value, T$.dynamicTodynamic()));
+    }
+    addValue(key, value) {
+      return this.appConfig[$putIfAbsent](key, dart.fn(() => value, T$.VoidTodynamic()));
+    }
+    add(map) {
+      return this.appConfig[$addAll](map);
+    }
+    [_getFromUrl](url, opts) {
+      let queryParameters = opts && 'queryParameters' in opts ? opts.queryParameters : null;
+      let headers = opts && 'headers' in opts ? opts.headers : null;
+      return async.async(T$.MapLOfStringL$dynamic(), function* _getFromUrl() {
+        let t0;
+        let finalUrl = url;
+        if (queryParameters != null) {
+          queryParameters[$forEach](dart.fn((k, v) => {
+            finalUrl = dart.notNull(finalUrl) + (!finalUrl[$endsWith]("?") ? "?" + dart.str(k) + "=" + dart.str(v) : "&" + dart.str(k) + "=" + dart.str(v));
+          }, T$.StringLAndStringLToNull()));
+        }
+        if (headers == null) {
+          headers = new (T$.LinkedMapOfStringL$StringL()).new();
+        }
+        headers[$putIfAbsent]("Accept", dart.fn(() => "application/json", T$.VoidToStringL()));
+        let response = (yield http.get(core.Uri.encodeFull(finalUrl), {headers: headers}));
+        if (response == null || response.statusCode !== 200) {
+          dart.throw(core.Exception.new("HTTP request failed, statusCode: " + dart.str((t0 = response, t0 == null ? null : t0.statusCode)) + ", " + dart.str(finalUrl)));
+        }
+        return T$.FutureOrLOfMapLOfStringL$dynamic().as(convert.json.decode(response.body));
+      });
+    }
+  };
+  (global_configuration.GlobalConfiguration._internal = function() {
+    this[appConfig] = new (T$.LinkedMapOfStringL$dynamic()).new();
+    ;
+  }).prototype = global_configuration.GlobalConfiguration.prototype;
+  dart.addTypeTests(global_configuration.GlobalConfiguration);
+  dart.addTypeCaches(global_configuration.GlobalConfiguration);
+  dart.setMethodSignature(global_configuration.GlobalConfiguration, () => ({
+    __proto__: dart.getMethods(global_configuration.GlobalConfiguration.__proto__),
+    [_hexStringToColor]: dart.fnType(dart.legacy(ui.Color), [dart.legacy(core.String)]),
+    loadFromMap: dart.fnType(dart.legacy(global_configuration.GlobalConfiguration), [dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic))]),
+    loadFromAsset: dart.fnType(dart.legacy(async.Future$(dart.legacy(global_configuration.GlobalConfiguration))), [dart.legacy(core.String)]),
+    loadFromPath: dart.fnType(dart.legacy(async.Future$(dart.legacy(global_configuration.GlobalConfiguration))), [dart.legacy(core.String)]),
+    loadFromPathIntoKey: dart.fnType(dart.legacy(async.Future$(dart.legacy(global_configuration.GlobalConfiguration))), [dart.legacy(core.String), dart.legacy(core.String)]),
+    loadFromUrl: dart.fnType(dart.legacy(async.Future$(dart.legacy(global_configuration.GlobalConfiguration))), [dart.legacy(core.String)], {headers: dart.legacy(core.Map$(dart.legacy(core.String), dart.legacy(core.String))), queryParameters: dart.legacy(core.Map$(dart.legacy(core.String), dart.legacy(core.String)))}, {}),
+    loadFromUrlIntoKey: dart.fnType(dart.legacy(async.Future$(dart.legacy(global_configuration.GlobalConfiguration))), [dart.legacy(core.String), dart.legacy(core.String)], {headers: dart.legacy(core.Map$(dart.legacy(core.String), dart.legacy(core.String))), queryParameters: dart.legacy(core.Map$(dart.legacy(core.String), dart.legacy(core.String)))}, {}),
+    get: dart.fnType(dart.dynamic, [dart.legacy(core.String)]),
+    getValue: dart.gFnType(T => [dart.legacy(T), [dart.legacy(core.String)]]),
+    getDeepValue: dart.gFnType(T => [dart.legacy(T), [dart.legacy(core.String)]]),
+    getBool: dart.fnType(dart.legacy(core.bool), [dart.legacy(core.String)]),
+    getInt: dart.fnType(dart.legacy(core.int), [dart.legacy(core.String)]),
+    getDouble: dart.fnType(dart.legacy(core.double), [dart.legacy(core.String)]),
+    getString: dart.fnType(dart.legacy(core.String), [dart.legacy(core.String)]),
+    clear: dart.fnType(dart.void, []),
+    setValue: dart.fnType(dart.void, [dart.dynamic, dart.dynamic]),
+    updateValue: dart.fnType(dart.void, [dart.legacy(core.String), dart.dynamic]),
+    addValue: dart.fnType(dart.void, [dart.legacy(core.String), dart.dynamic]),
+    add: dart.fnType(dart.dynamic, [dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic))]),
+    [_getFromUrl]: dart.fnType(dart.legacy(async.Future$(dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic)))), [dart.legacy(core.String)], {headers: dart.legacy(core.Map$(dart.legacy(core.String), dart.legacy(core.String))), queryParameters: dart.legacy(core.Map$(dart.legacy(core.String), dart.legacy(core.String)))}, {})
+  }));
+  dart.setLibraryUri(global_configuration.GlobalConfiguration, I[0]);
+  dart.setFieldSignature(global_configuration.GlobalConfiguration, () => ({
+    __proto__: dart.getFields(global_configuration.GlobalConfiguration.__proto__),
+    appConfig: dart.fieldType(dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic)))
+  }));
+  dart.defineLazy(global_configuration.GlobalConfiguration, {
+    /*global_configuration.GlobalConfiguration._singleton*/get _singleton() {
+      return new global_configuration.GlobalConfiguration._internal();
+    },
+    set _singleton(_) {}
+  }, true);
+  dart.trackLibraries("packages/global_configuration/global_configuration.dart", {
+    "package:global_configuration/global_configuration.dart": global_configuration
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["global_configuration.dart"],"names":[],"mappings":"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","file":"../../../../../../../../packages/global_configuration/global_configuration.dart.lib.js"}');
+  // Exports:
+  return {
+    global_configuration: global_configuration
+  };
+}));
+
+//# sourceMappingURL=global_configuration.dart.lib.js.map

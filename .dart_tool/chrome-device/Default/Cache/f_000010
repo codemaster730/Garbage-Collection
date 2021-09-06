@@ -1,0 +1,368 @@
+define(['dart_sdk', 'packages/flutter/src/material/page.dart', 'packages/laji_proj/pages/splash_screen.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/laji_proj/pages/home.dart', 'packages/laji_proj/pages/login.dart', 'packages/laji_proj/pages/register.dart', 'packages/laji_proj/pages/register_verify.dart', 'packages/laji_proj/pages/change_password.dart', 'packages/laji_proj/models/route_argument.dart', 'packages/laji_proj/pages/forgot_password_verify.dart', 'packages/laji_proj/pages/forgot_password_change.dart', 'packages/laji_proj/pages/search_detail.dart', 'packages/laji_proj/pages/map_detail.dart', 'packages/laji_proj/pages/order_detail.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/widgets/safe_area.dart'], (function load__packages__laji_proj__route_generator_dart(dart_sdk, packages__flutter__src__material__page$46dart, packages__laji_proj__pages__splash_screen$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__laji_proj__pages__home$46dart, packages__laji_proj__pages__login$46dart, packages__laji_proj__pages__register$46dart, packages__laji_proj__pages__register_verify$46dart, packages__laji_proj__pages__change_password$46dart, packages__laji_proj__models__route_argument$46dart, packages__laji_proj__pages__forgot_password_verify$46dart, packages__laji_proj__pages__forgot_password_change$46dart, packages__laji_proj__pages__search_detail$46dart, packages__laji_proj__pages__map_detail$46dart, packages__laji_proj__pages__order_detail$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__widgets__safe_area$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const page = packages__flutter__src__material__page$46dart.src__material__page;
+  const splash_screen = packages__laji_proj__pages__splash_screen$46dart.pages__splash_screen;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const home = packages__laji_proj__pages__home$46dart.pages__home;
+  const login = packages__laji_proj__pages__login$46dart.pages__login;
+  const register = packages__laji_proj__pages__register$46dart.pages__register;
+  const register_verify = packages__laji_proj__pages__register_verify$46dart.pages__register_verify;
+  const change_password = packages__laji_proj__pages__change_password$46dart.pages__change_password;
+  const route_argument = packages__laji_proj__models__route_argument$46dart.models__route_argument;
+  const forgot_password_verify = packages__laji_proj__pages__forgot_password_verify$46dart.pages__forgot_password_verify;
+  const forgot_password_change = packages__laji_proj__pages__forgot_password_change$46dart.pages__forgot_password_change;
+  const search_detail = packages__laji_proj__pages__search_detail$46dart.pages__search_detail;
+  const map_detail = packages__laji_proj__pages__map_detail$46dart.pages__map_detail;
+  const order_detail = packages__laji_proj__pages__order_detail$46dart.pages__order_detail;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const safe_area = packages__flutter__src__widgets__safe_area$46dart.src__widgets__safe_area;
+  var route_generator = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    SplashScreenL: () => (T.SplashScreenL = dart.constFn(dart.legacy(splash_screen.SplashScreen)))(),
+    BuildContextL: () => (T.BuildContextL = dart.constFn(dart.legacy(framework.BuildContext)))(),
+    BuildContextLToSplashScreenL: () => (T.BuildContextLToSplashScreenL = dart.constFn(dart.fnType(T.SplashScreenL(), [T.BuildContextL()])))(),
+    HomeWidgetL: () => (T.HomeWidgetL = dart.constFn(dart.legacy(home.HomeWidget)))(),
+    BuildContextLToHomeWidgetL: () => (T.BuildContextLToHomeWidgetL = dart.constFn(dart.fnType(T.HomeWidgetL(), [T.BuildContextL()])))(),
+    LoginWidgetL: () => (T.LoginWidgetL = dart.constFn(dart.legacy(login.LoginWidget)))(),
+    BuildContextLToLoginWidgetL: () => (T.BuildContextLToLoginWidgetL = dart.constFn(dart.fnType(T.LoginWidgetL(), [T.BuildContextL()])))(),
+    RegisterWidgetL: () => (T.RegisterWidgetL = dart.constFn(dart.legacy(register.RegisterWidget)))(),
+    BuildContextLToRegisterWidgetL: () => (T.BuildContextLToRegisterWidgetL = dart.constFn(dart.fnType(T.RegisterWidgetL(), [T.BuildContextL()])))(),
+    RegisterVerifyWidgetL: () => (T.RegisterVerifyWidgetL = dart.constFn(dart.legacy(register_verify.RegisterVerifyWidget)))(),
+    BuildContextLToRegisterVerifyWidgetL: () => (T.BuildContextLToRegisterVerifyWidgetL = dart.constFn(dart.fnType(T.RegisterVerifyWidgetL(), [T.BuildContextL()])))(),
+    RouteArgumentL: () => (T.RouteArgumentL = dart.constFn(dart.legacy(route_argument.RouteArgument)))(),
+    ChangePasswordScreenL: () => (T.ChangePasswordScreenL = dart.constFn(dart.legacy(change_password.ChangePasswordScreen)))(),
+    BuildContextLToChangePasswordScreenL: () => (T.BuildContextLToChangePasswordScreenL = dart.constFn(dart.fnType(T.ChangePasswordScreenL(), [T.BuildContextL()])))(),
+    ForgotPasswordVerifyWidgetL: () => (T.ForgotPasswordVerifyWidgetL = dart.constFn(dart.legacy(forgot_password_verify.ForgotPasswordVerifyWidget)))(),
+    BuildContextLToForgotPasswordVerifyWidgetL: () => (T.BuildContextLToForgotPasswordVerifyWidgetL = dart.constFn(dart.fnType(T.ForgotPasswordVerifyWidgetL(), [T.BuildContextL()])))(),
+    ForgotPasswordChangeWidgetL: () => (T.ForgotPasswordChangeWidgetL = dart.constFn(dart.legacy(forgot_password_change.ForgotPasswordChangeWidget)))(),
+    BuildContextLToForgotPasswordChangeWidgetL: () => (T.BuildContextLToForgotPasswordChangeWidgetL = dart.constFn(dart.fnType(T.ForgotPasswordChangeWidgetL(), [T.BuildContextL()])))(),
+    SearchDetailWidgetL: () => (T.SearchDetailWidgetL = dart.constFn(dart.legacy(search_detail.SearchDetailWidget)))(),
+    BuildContextLToSearchDetailWidgetL: () => (T.BuildContextLToSearchDetailWidgetL = dart.constFn(dart.fnType(T.SearchDetailWidgetL(), [T.BuildContextL()])))(),
+    MapDetailWidgetL: () => (T.MapDetailWidgetL = dart.constFn(dart.legacy(map_detail.MapDetailWidget)))(),
+    BuildContextLToMapDetailWidgetL: () => (T.BuildContextLToMapDetailWidgetL = dart.constFn(dart.fnType(T.MapDetailWidgetL(), [T.BuildContextL()])))(),
+    OrderDetailWidgetL: () => (T.OrderDetailWidgetL = dart.constFn(dart.legacy(order_detail.OrderDetailWidget)))(),
+    BuildContextLToOrderDetailWidgetL: () => (T.BuildContextLToOrderDetailWidgetL = dart.constFn(dart.fnType(T.OrderDetailWidgetL(), [T.BuildContextL()])))(),
+    ScaffoldL: () => (T.ScaffoldL = dart.constFn(dart.legacy(scaffold.Scaffold)))(),
+    BuildContextLToScaffoldL: () => (T.BuildContextLToScaffoldL = dart.constFn(dart.fnType(T.ScaffoldL(), [T.BuildContextL()])))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C1() {
+      return C[1] = dart.constList([], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 50,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "currentTab",
+        [_Location_column]: 61,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.constList([C[4] || CT.C4], T._LocationL());
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[3] || CT.C3,
+        [_Location_name]: null,
+        [_Location_column]: 50,
+        [_Location_line]: 24,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 50,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 50,
+        [_Location_line]: 28,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 50,
+        [_Location_line]: 30,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "routeArgument",
+        [_Location_column]: 38,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.constList([C[10] || CT.C10], T._LocationL());
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 35,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 50,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 50,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 50,
+        [_Location_line]: 41,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 50,
+        [_Location_line]: 43,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "index",
+        [_Location_column]: 47,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.constList([C[17] || CT.C17], T._LocationL());
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[16] || CT.C16,
+        [_Location_name]: null,
+        [_Location_column]: 29,
+        [_Location_line]: 46,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 53,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.constList([C[20] || CT.C20], T._LocationL());
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 48,
+        [_Location_line]: 51,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 41,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.constList([C[23] || CT.C23], T._LocationL());
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[22] || CT.C22,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 51,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 26,
+        [_Location_line]: 51,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.constList([C[26] || CT.C26], T._LocationL());
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[25] || CT.C25,
+        [_Location_name]: null,
+        [_Location_column]: 17,
+        [_Location_line]: 51,
+        [_Location_file]: "file:///D:/0000000/we/lajicome/lib/route_generator.dart"
+      });
+    }
+  }, false);
+  var C = Array(27).fill(void 0);
+  var I = ["package:laji_proj/route_generator.dart"];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  route_generator.RouteGenerator = class RouteGenerator extends core.Object {
+    static generateRoute(settings) {
+      let args = settings.arguments;
+      switch (settings.name) {
+        case "/Splash":
+        {
+          return new page.MaterialPageRoute.new({builder: dart.fn(_ => new splash_screen.SplashScreen.new({$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), T.BuildContextLToSplashScreenL())});
+        }
+        case "/home":
+        {
+          return new page.MaterialPageRoute.new({builder: dart.fn(_ => new home.HomeWidget.new({currentTab: args, $creationLocationd_0dea112b090073317d4: C[2] || CT.C2}), T.BuildContextLToHomeWidgetL())});
+        }
+        case "/login":
+        {
+          return new page.MaterialPageRoute.new({builder: dart.fn(_ => new login.LoginWidget.new({$creationLocationd_0dea112b090073317d4: C[5] || CT.C5}), T.BuildContextLToLoginWidgetL())});
+        }
+        case "/register":
+        {
+          return new page.MaterialPageRoute.new({builder: dart.fn(_ => new register.RegisterWidget.new({$creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), T.BuildContextLToRegisterWidgetL())});
+        }
+        case "/register_verify":
+        {
+          return new page.MaterialPageRoute.new({builder: dart.fn(_ => new register_verify.RegisterVerifyWidget.new({$creationLocationd_0dea112b090073317d4: C[7] || CT.C7}), T.BuildContextLToRegisterVerifyWidgetL())});
+        }
+        case "/forgot_password":
+        {
+          return new page.MaterialPageRoute.new({builder: dart.fn(_ => new change_password.ChangePasswordScreen.new({routeArgument: T.RouteArgumentL().as(args), $creationLocationd_0dea112b090073317d4: C[8] || CT.C8}), T.BuildContextLToChangePasswordScreenL())});
+        }
+        case "/forgot_password_verify":
+        {
+          return new page.MaterialPageRoute.new({builder: dart.fn(_ => new forgot_password_verify.ForgotPasswordVerifyWidget.new({$creationLocationd_0dea112b090073317d4: C[11] || CT.C11}), T.BuildContextLToForgotPasswordVerifyWidgetL())});
+        }
+        case "/forgot_password_change":
+        {
+          return new page.MaterialPageRoute.new({builder: dart.fn(_ => new forgot_password_change.ForgotPasswordChangeWidget.new({$creationLocationd_0dea112b090073317d4: C[12] || CT.C12}), T.BuildContextLToForgotPasswordChangeWidgetL())});
+        }
+        case "/search":
+        {
+          return new page.MaterialPageRoute.new({builder: dart.fn(_ => new search_detail.SearchDetailWidget.new({$creationLocationd_0dea112b090073317d4: C[13] || CT.C13}), T.BuildContextLToSearchDetailWidgetL())});
+        }
+        case "/mapDetail":
+        {
+          return new page.MaterialPageRoute.new({builder: dart.fn(_ => new map_detail.MapDetailWidget.new({$creationLocationd_0dea112b090073317d4: C[14] || CT.C14}), T.BuildContextLToMapDetailWidgetL())});
+        }
+        case "/orderDetail":
+        {
+          return new page.MaterialPageRoute.new({builder: dart.fn(_ => new order_detail.OrderDetailWidget.new({index: args, $creationLocationd_0dea112b090073317d4: C[15] || CT.C15}), T.BuildContextLToOrderDetailWidgetL())});
+        }
+        default:
+        {
+          return new page.MaterialPageRoute.new({builder: dart.fn(_ => new scaffold.Scaffold.new({body: new safe_area.SafeArea.new({child: new text.Text.new("Route Error", {$creationLocationd_0dea112b090073317d4: C[18] || CT.C18}), $creationLocationd_0dea112b090073317d4: C[21] || CT.C21}), $creationLocationd_0dea112b090073317d4: C[24] || CT.C24}), T.BuildContextLToScaffoldL())});
+        }
+      }
+    }
+  };
+  (route_generator.RouteGenerator.new = function() {
+    ;
+  }).prototype = route_generator.RouteGenerator.prototype;
+  dart.addTypeTests(route_generator.RouteGenerator);
+  dart.addTypeCaches(route_generator.RouteGenerator);
+  dart.setLibraryUri(route_generator.RouteGenerator, I[0]);
+  dart.trackLibraries("packages/laji_proj/route_generator.dart", {
+    "package:laji_proj/route_generator.dart": route_generator
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["route_generator.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;yBAgBoD;AAE1C,iBAAO,AAAS,QAAD;AACrB,cAAQ,AAAS,QAAD;;;AAEZ,gBAAO,0CAA2B,QAAC,KAAM;;;;AAEzC,gBAAO,0CAA2B,QAAC,KAAM,qCAAuB,IAAI;;;;AAEpE,gBAAO,0CAA2B,QAAC,KAAM;;;;AAEzC,gBAAO,0CAA2B,QAAC,KAAM;;;;AAEzC,gBAAO,0CAA2B,QAAC,KAAM;;;;AAGzC,gBAAO,0CACM,QAAC,KACN,6DAAyC,sBAAL,IAAI;;;;AAEhD,gBAAO,0CAA2B,QAAC,KAAM;;;;AAEzC,gBAAO,0CAA2B,QAAC,KAAM;;;;AAEzC,gBAAO,0CAA2B,QAAC,KAAM;;;;AAEzC,gBAAO,0CAA2B,QAAC,KAAM;;;;AAEzC,gBAAO,0CACM,QAAC,KAAM,+CAAyB,IAAI;;;;AAGjD,gBAAO,0CACM,QAAC,KACN,iCAAe,mCAAgB,kBAAK;;;IAElD;;;;EACF","file":"../../../../packages/laji_proj/route_generator.dart.lib.js"}');
+  // Exports:
+  return {
+    route_generator: route_generator
+  };
+}));
+
+//# sourceMappingURL=route_generator.dart.lib.js.map

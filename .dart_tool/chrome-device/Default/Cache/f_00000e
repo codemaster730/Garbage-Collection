@@ -1,0 +1,351 @@
+define(['dart_sdk', 'packages/flutter/src/foundation/change_notifier.dart', 'packages/laji_proj/helpers/custom_trace.dart'], (function load__packages__laji_proj__models__setting_dart(dart_sdk, packages__flutter__src__foundation__change_notifier$46dart, packages__laji_proj__helpers__custom_trace$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const ui = dart_sdk.ui;
+  const _interceptors = dart_sdk._interceptors;
+  const _js_helper = dart_sdk._js_helper;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const change_notifier = packages__flutter__src__foundation__change_notifier$46dart.src__foundation__change_notifier;
+  const custom_trace = packages__laji_proj__helpers__custom_trace$46dart.helpers__custom_trace;
+  var setting = Object.create(dart.library);
+  var $_get = dartx._get;
+  var $toString = dartx.toString;
+  var $add = dartx.add;
+  var $_set = dartx._set;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    LocaleL: () => (T.LocaleL = dart.constFn(dart.legacy(ui.Locale)))(),
+    ValueNotifierOfLocaleL: () => (T.ValueNotifierOfLocaleL = dart.constFn(change_notifier.ValueNotifier$(T.LocaleL())))(),
+    StringL: () => (T.StringL = dart.constFn(dart.legacy(core.String)))(),
+    JSArrayOfStringL: () => (T.JSArrayOfStringL = dart.constFn(_interceptors.JSArray$(T.StringL())))(),
+    BrightnessL: () => (T.BrightnessL = dart.constFn(dart.legacy(ui.Brightness)))(),
+    ValueNotifierOfBrightnessL: () => (T.ValueNotifierOfBrightnessL = dart.constFn(change_notifier.ValueNotifier$(T.BrightnessL())))(),
+    LinkedMapOfStringL$dynamic: () => (T.LinkedMapOfStringL$dynamic = dart.constFn(_js_helper.LinkedMap$(T.StringL(), dart.dynamic)))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  var C = [];
+  var I = ["package:laji_proj/models/setting.dart"];
+  var appName = dart.privateName(setting, "Setting.appName");
+  var defaultTax = dart.privateName(setting, "Setting.defaultTax");
+  var defaultCurrency = dart.privateName(setting, "Setting.defaultCurrency");
+  var distanceUnit = dart.privateName(setting, "Setting.distanceUnit");
+  var currencyRight = dart.privateName(setting, "Setting.currencyRight");
+  var currencyDecimalDigits = dart.privateName(setting, "Setting.currencyDecimalDigits");
+  var payPalEnabled = dart.privateName(setting, "Setting.payPalEnabled");
+  var stripeEnabled = dart.privateName(setting, "Setting.stripeEnabled");
+  var razorPayEnabled = dart.privateName(setting, "Setting.razorPayEnabled");
+  var mainColor = dart.privateName(setting, "Setting.mainColor");
+  var mainDarkColor = dart.privateName(setting, "Setting.mainDarkColor");
+  var secondColor = dart.privateName(setting, "Setting.secondColor");
+  var secondDarkColor = dart.privateName(setting, "Setting.secondDarkColor");
+  var primaryColor = dart.privateName(setting, "Setting.primaryColor");
+  var accentDarkColor = dart.privateName(setting, "Setting.accentDarkColor");
+  var scaffoldDarkColor = dart.privateName(setting, "Setting.scaffoldDarkColor");
+  var scaffoldColor = dart.privateName(setting, "Setting.scaffoldColor");
+  var googleMapsKey = dart.privateName(setting, "Setting.googleMapsKey");
+  var fcmKey = dart.privateName(setting, "Setting.fcmKey");
+  var mobileLanguage = dart.privateName(setting, "Setting.mobileLanguage");
+  var appVersion = dart.privateName(setting, "Setting.appVersion");
+  var enableVersion = dart.privateName(setting, "Setting.enableVersion");
+  var homeSections = dart.privateName(setting, "Setting.homeSections");
+  var brightness = dart.privateName(setting, "Setting.brightness");
+  setting.Setting = class Setting extends core.Object {
+    get appName() {
+      return this[appName];
+    }
+    set appName(value) {
+      this[appName] = value;
+    }
+    get defaultTax() {
+      return this[defaultTax];
+    }
+    set defaultTax(value) {
+      this[defaultTax] = value;
+    }
+    get defaultCurrency() {
+      return this[defaultCurrency];
+    }
+    set defaultCurrency(value) {
+      this[defaultCurrency] = value;
+    }
+    get distanceUnit() {
+      return this[distanceUnit];
+    }
+    set distanceUnit(value) {
+      this[distanceUnit] = value;
+    }
+    get currencyRight() {
+      return this[currencyRight];
+    }
+    set currencyRight(value) {
+      this[currencyRight] = value;
+    }
+    get currencyDecimalDigits() {
+      return this[currencyDecimalDigits];
+    }
+    set currencyDecimalDigits(value) {
+      this[currencyDecimalDigits] = value;
+    }
+    get payPalEnabled() {
+      return this[payPalEnabled];
+    }
+    set payPalEnabled(value) {
+      this[payPalEnabled] = value;
+    }
+    get stripeEnabled() {
+      return this[stripeEnabled];
+    }
+    set stripeEnabled(value) {
+      this[stripeEnabled] = value;
+    }
+    get razorPayEnabled() {
+      return this[razorPayEnabled];
+    }
+    set razorPayEnabled(value) {
+      this[razorPayEnabled] = value;
+    }
+    get mainColor() {
+      return this[mainColor];
+    }
+    set mainColor(value) {
+      this[mainColor] = value;
+    }
+    get mainDarkColor() {
+      return this[mainDarkColor];
+    }
+    set mainDarkColor(value) {
+      this[mainDarkColor] = value;
+    }
+    get secondColor() {
+      return this[secondColor];
+    }
+    set secondColor(value) {
+      this[secondColor] = value;
+    }
+    get secondDarkColor() {
+      return this[secondDarkColor];
+    }
+    set secondDarkColor(value) {
+      this[secondDarkColor] = value;
+    }
+    get primaryColor() {
+      return this[primaryColor];
+    }
+    set primaryColor(value) {
+      this[primaryColor] = value;
+    }
+    get accentDarkColor() {
+      return this[accentDarkColor];
+    }
+    set accentDarkColor(value) {
+      this[accentDarkColor] = value;
+    }
+    get scaffoldDarkColor() {
+      return this[scaffoldDarkColor];
+    }
+    set scaffoldDarkColor(value) {
+      this[scaffoldDarkColor] = value;
+    }
+    get scaffoldColor() {
+      return this[scaffoldColor];
+    }
+    set scaffoldColor(value) {
+      this[scaffoldColor] = value;
+    }
+    get googleMapsKey() {
+      return this[googleMapsKey];
+    }
+    set googleMapsKey(value) {
+      this[googleMapsKey] = value;
+    }
+    get fcmKey() {
+      return this[fcmKey];
+    }
+    set fcmKey(value) {
+      this[fcmKey] = value;
+    }
+    get mobileLanguage() {
+      return this[mobileLanguage];
+    }
+    set mobileLanguage(value) {
+      this[mobileLanguage] = value;
+    }
+    get appVersion() {
+      return this[appVersion];
+    }
+    set appVersion(value) {
+      this[appVersion] = value;
+    }
+    get enableVersion() {
+      return this[enableVersion];
+    }
+    set enableVersion(value) {
+      this[enableVersion] = value;
+    }
+    get homeSections() {
+      return this[homeSections];
+    }
+    set homeSections(value) {
+      this[homeSections] = value;
+    }
+    get brightness() {
+      return this[brightness];
+    }
+    set brightness(value) {
+      this[brightness] = value;
+    }
+    toMap() {
+      let map = new (T.LinkedMapOfStringL$dynamic()).new();
+      map[$_set]("app_name", this.appName);
+      map[$_set]("default_tax", this.defaultTax);
+      map[$_set]("default_currency", this.defaultCurrency);
+      map[$_set]("default_currency_decimal_digits", this.currencyDecimalDigits);
+      map[$_set]("currency_right", this.currencyRight);
+      map[$_set]("enable_paypal", this.payPalEnabled);
+      map[$_set]("enable_stripe", this.stripeEnabled);
+      map[$_set]("enable_razorpay", this.razorPayEnabled);
+      map[$_set]("mobile_language", this.mobileLanguage.value.languageCode);
+      return map;
+    }
+  };
+  (setting.Setting.new = function() {
+    this[appName] = "";
+    this[defaultTax] = null;
+    this[defaultCurrency] = null;
+    this[distanceUnit] = null;
+    this[currencyRight] = false;
+    this[currencyDecimalDigits] = 2;
+    this[payPalEnabled] = true;
+    this[stripeEnabled] = true;
+    this[razorPayEnabled] = true;
+    this[mainColor] = null;
+    this[mainDarkColor] = null;
+    this[secondColor] = null;
+    this[secondDarkColor] = null;
+    this[primaryColor] = null;
+    this[accentDarkColor] = null;
+    this[scaffoldDarkColor] = null;
+    this[scaffoldColor] = null;
+    this[googleMapsKey] = null;
+    this[fcmKey] = null;
+    this[mobileLanguage] = new (T.ValueNotifierOfLocaleL()).new(new ui.Locale.new("zh", "CN"));
+    this[appVersion] = null;
+    this[enableVersion] = true;
+    this[homeSections] = T.JSArrayOfStringL().of([]);
+    this[brightness] = new (T.ValueNotifierOfBrightnessL()).new(ui.Brightness.light);
+    ;
+  }).prototype = setting.Setting.prototype;
+  (setting.Setting.fromJSON = function(jsonMap) {
+    let t0, t0$, t0$0, t0$1, t0$2, t0$3, t0$4, t0$5, t0$6, t0$7, t0$8, t0$9, t0$10, t0$11, t0$12, t0$13, t0$14, t0$15, t0$16;
+    this[appName] = "";
+    this[defaultTax] = null;
+    this[defaultCurrency] = null;
+    this[distanceUnit] = null;
+    this[currencyRight] = false;
+    this[currencyDecimalDigits] = 2;
+    this[payPalEnabled] = true;
+    this[stripeEnabled] = true;
+    this[razorPayEnabled] = true;
+    this[mainColor] = null;
+    this[mainDarkColor] = null;
+    this[secondColor] = null;
+    this[secondDarkColor] = null;
+    this[primaryColor] = null;
+    this[accentDarkColor] = null;
+    this[scaffoldDarkColor] = null;
+    this[scaffoldColor] = null;
+    this[googleMapsKey] = null;
+    this[fcmKey] = null;
+    this[mobileLanguage] = new (T.ValueNotifierOfLocaleL()).new(new ui.Locale.new("zh", "CN"));
+    this[appVersion] = null;
+    this[enableVersion] = true;
+    this[homeSections] = T.JSArrayOfStringL().of([]);
+    this[brightness] = new (T.ValueNotifierOfBrightnessL()).new(ui.Brightness.light);
+    try {
+      this.appName = T.StringL().as((t0 = jsonMap[$_get]("app_name"), t0 == null ? null : t0));
+      this.mainColor = T.StringL().as((t0$ = jsonMap[$_get]("main_color"), t0$ == null ? null : t0$));
+      this.mainDarkColor = T.StringL().as((t0$0 = jsonMap[$_get]("main_dark_color"), t0$0 == null ? "" : t0$0));
+      this.secondColor = T.StringL().as((t0$1 = jsonMap[$_get]("second_color"), t0$1 == null ? "" : t0$1));
+      this.secondDarkColor = T.StringL().as((t0$2 = jsonMap[$_get]("second_dark_color"), t0$2 == null ? "" : t0$2));
+      this.primaryColor = T.StringL().as((t0$3 = jsonMap[$_get]("accent_color"), t0$3 == null ? "" : t0$3));
+      this.accentDarkColor = T.StringL().as((t0$4 = jsonMap[$_get]("accent_dark_color"), t0$4 == null ? "" : t0$4));
+      this.scaffoldDarkColor = T.StringL().as((t0$5 = jsonMap[$_get]("scaffold_dark_color"), t0$5 == null ? "" : t0$5));
+      this.scaffoldColor = T.StringL().as((t0$6 = jsonMap[$_get]("scaffold_color"), t0$6 == null ? "" : t0$6));
+      this.googleMapsKey = T.StringL().as((t0$7 = jsonMap[$_get]("google_maps_key"), t0$7 == null ? null : t0$7));
+      this.fcmKey = T.StringL().as((t0$8 = jsonMap[$_get]("fcm_key"), t0$8 == null ? null : t0$8));
+      this.mobileLanguage.value = new ui.Locale.new(core.String.as((t0$9 = jsonMap[$_get]("mobile_language"), t0$9 == null ? "en" : t0$9)), "");
+      this.appVersion = T.StringL().as((t0$10 = jsonMap[$_get]("app_version"), t0$10 == null ? "" : t0$10));
+      this.distanceUnit = T.StringL().as((t0$11 = jsonMap[$_get]("distance_unit"), t0$11 == null ? "km" : t0$11));
+      this.enableVersion = jsonMap[$_get]("enable_version") == null || dart.equals(jsonMap[$_get]("enable_version"), "0") ? false : true;
+      this.defaultTax = (t0$13 = core.double.tryParse(core.String.as((t0$12 = jsonMap[$_get]("default_tax"), t0$12 == null ? "0" : t0$12))), t0$13 == null ? 0.0 : t0$13);
+      this.defaultCurrency = T.StringL().as((t0$14 = jsonMap[$_get]("default_currency"), t0$14 == null ? "" : t0$14));
+      this.currencyDecimalDigits = (t0$16 = core.int.tryParse(core.String.as((t0$15 = jsonMap[$_get]("default_currency_decimal_digits"), t0$15 == null ? "2" : t0$15))), t0$16 == null ? 2 : t0$16);
+      this.currencyRight = jsonMap[$_get]("currency_right") == null || dart.equals(jsonMap[$_get]("currency_right"), "0") ? false : true;
+      this.payPalEnabled = jsonMap[$_get]("enable_paypal") == null || dart.equals(jsonMap[$_get]("enable_paypal"), "0") ? false : true;
+      this.stripeEnabled = jsonMap[$_get]("enable_stripe") == null || dart.equals(jsonMap[$_get]("enable_stripe"), "0") ? false : true;
+      this.razorPayEnabled = jsonMap[$_get]("enable_razorpay") == null || dart.equals(jsonMap[$_get]("enable_razorpay"), "0") ? false : true;
+      for (let _i = 1; _i <= 12; _i = _i + 1) {
+        this.homeSections[$add](T.StringL().as(jsonMap[$_get]("home_section_" + _i[$toString]()) != null ? jsonMap[$_get]("home_section_" + _i[$toString]()) : "empty"));
+      }
+    } catch (e$) {
+      let e = dart.getThrown(e$);
+      core.print(new custom_trace.CustomTrace.new(core.StackTrace.current, {message: T.StringL().as(e)}));
+    }
+  }).prototype = setting.Setting.prototype;
+  dart.addTypeTests(setting.Setting);
+  dart.addTypeCaches(setting.Setting);
+  dart.setMethodSignature(setting.Setting, () => ({
+    __proto__: dart.getMethods(setting.Setting.__proto__),
+    toMap: dart.fnType(dart.legacy(core.Map), [])
+  }));
+  dart.setLibraryUri(setting.Setting, I[0]);
+  dart.setFieldSignature(setting.Setting, () => ({
+    __proto__: dart.getFields(setting.Setting.__proto__),
+    appName: dart.fieldType(dart.legacy(core.String)),
+    defaultTax: dart.fieldType(dart.legacy(core.double)),
+    defaultCurrency: dart.fieldType(dart.legacy(core.String)),
+    distanceUnit: dart.fieldType(dart.legacy(core.String)),
+    currencyRight: dart.fieldType(dart.legacy(core.bool)),
+    currencyDecimalDigits: dart.fieldType(dart.legacy(core.int)),
+    payPalEnabled: dart.fieldType(dart.legacy(core.bool)),
+    stripeEnabled: dart.fieldType(dart.legacy(core.bool)),
+    razorPayEnabled: dart.fieldType(dart.legacy(core.bool)),
+    mainColor: dart.fieldType(dart.legacy(core.String)),
+    mainDarkColor: dart.fieldType(dart.legacy(core.String)),
+    secondColor: dart.fieldType(dart.legacy(core.String)),
+    secondDarkColor: dart.fieldType(dart.legacy(core.String)),
+    primaryColor: dart.fieldType(dart.legacy(core.String)),
+    accentDarkColor: dart.fieldType(dart.legacy(core.String)),
+    scaffoldDarkColor: dart.fieldType(dart.legacy(core.String)),
+    scaffoldColor: dart.fieldType(dart.legacy(core.String)),
+    googleMapsKey: dart.fieldType(dart.legacy(core.String)),
+    fcmKey: dart.fieldType(dart.legacy(core.String)),
+    mobileLanguage: dart.fieldType(dart.legacy(change_notifier.ValueNotifier$(dart.legacy(ui.Locale)))),
+    appVersion: dart.fieldType(dart.legacy(core.String)),
+    enableVersion: dart.fieldType(dart.legacy(core.bool)),
+    homeSections: dart.fieldType(dart.legacy(core.List$(dart.legacy(core.String)))),
+    brightness: dart.fieldType(dart.legacy(change_notifier.ValueNotifier$(dart.legacy(ui.Brightness))))
+  }));
+  dart.trackLibraries("packages/laji_proj/models/setting.dart", {
+    "package:laji_proj/models/setting.dart": setting
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["setting.dart"],"names":[],"mappings":"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","file":"../../../../../packages/laji_proj/models/setting.dart.lib.js"}');
+  // Exports:
+  return {
+    models__setting: setting
+  };
+}));
+
+//# sourceMappingURL=setting.dart.lib.js.map

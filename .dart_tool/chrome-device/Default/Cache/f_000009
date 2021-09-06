@@ -1,0 +1,441 @@
+define(['dart_sdk', 'packages/geolocator_platform_interface/src/extensions/integer_extensions.dart', 'packages/flutter/src/services/system_channels.dart', 'packages/geolocator_platform_interface/src/enums/location_permission.dart', 'packages/geolocator_platform_interface/src/models/position.dart', 'packages/geolocator_platform_interface/src/enums/location_accuracy.dart', 'packages/geolocator_platform_interface/src/models/location_options.dart', 'packages/geolocator_platform_interface/src/errors/activity_missing_exception.dart', 'packages/geolocator_platform_interface/src/errors/location_service_disabled_exception.dart', 'packages/geolocator_platform_interface/src/errors/already_subscribed_exception.dart', 'packages/geolocator_platform_interface/src/errors/permission_definitions_not_found_exception.dart', 'packages/geolocator_platform_interface/src/errors/permission_denied_exception.dart', 'packages/geolocator_platform_interface/src/errors/permission_request_in_progress_exception.dart', 'packages/geolocator_platform_interface/src/errors/position_update_exception.dart', 'packages/plugin_platform_interface/plugin_platform_interface.dart', 'packages/vector_math/vector_math.dart'], (function load__packages__geolocator_platform_interface__src__implementations__method_channel_geolocator_dart(dart_sdk, packages__geolocator_platform_interface__src__extensions__integer_extensions$46dart, packages__flutter__src__services__system_channels$46dart, packages__geolocator_platform_interface__src__enums__location_permission$46dart, packages__geolocator_platform_interface__src__models__position$46dart, packages__geolocator_platform_interface__src__enums__location_accuracy$46dart, packages__geolocator_platform_interface__src__models__location_options$46dart, packages__geolocator_platform_interface__src__errors__activity_missing_exception$46dart, packages__geolocator_platform_interface__src__errors__location_service_disabled_exception$46dart, packages__geolocator_platform_interface__src__errors__already_subscribed_exception$46dart, packages__geolocator_platform_interface__src__errors__permission_definitions_not_found_exception$46dart, packages__geolocator_platform_interface__src__errors__permission_denied_exception$46dart, packages__geolocator_platform_interface__src__errors__permission_request_in_progress_exception$46dart, packages__geolocator_platform_interface__src__errors__position_update_exception$46dart, packages__plugin_platform_interface__plugin_platform_interface$46dart, packages__vector_math__vector_math$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const async = dart_sdk.async;
+  const _js_helper = dart_sdk._js_helper;
+  const math = dart_sdk.math;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const integer_extensions = packages__geolocator_platform_interface__src__extensions__integer_extensions$46dart.src__extensions__integer_extensions;
+  const message_codec = packages__flutter__src__services__system_channels$46dart.src__services__message_codec;
+  const platform_channel = packages__flutter__src__services__system_channels$46dart.src__services__platform_channel;
+  const message_codecs = packages__flutter__src__services__system_channels$46dart.src__services__message_codecs;
+  const location_permission = packages__geolocator_platform_interface__src__enums__location_permission$46dart.src__enums__location_permission;
+  const position = packages__geolocator_platform_interface__src__models__position$46dart.src__models__position;
+  const location_accuracy = packages__geolocator_platform_interface__src__enums__location_accuracy$46dart.src__enums__location_accuracy;
+  const location_options = packages__geolocator_platform_interface__src__models__location_options$46dart.src__models__location_options;
+  const activity_missing_exception = packages__geolocator_platform_interface__src__errors__activity_missing_exception$46dart.src__errors__activity_missing_exception;
+  const location_service_disabled_exception = packages__geolocator_platform_interface__src__errors__location_service_disabled_exception$46dart.src__errors__location_service_disabled_exception;
+  const already_subscribed_exception = packages__geolocator_platform_interface__src__errors__already_subscribed_exception$46dart.src__errors__already_subscribed_exception;
+  const permission_definitions_not_found_exception = packages__geolocator_platform_interface__src__errors__permission_definitions_not_found_exception$46dart.src__errors__permission_definitions_not_found_exception;
+  const permission_denied_exception = packages__geolocator_platform_interface__src__errors__permission_denied_exception$46dart.src__errors__permission_denied_exception;
+  const permission_request_in_progress_exception = packages__geolocator_platform_interface__src__errors__permission_request_in_progress_exception$46dart.src__errors__permission_request_in_progress_exception;
+  const position_update_exception = packages__geolocator_platform_interface__src__errors__position_update_exception$46dart.src__errors__position_update_exception;
+  const plugin_platform_interface = packages__plugin_platform_interface__plugin_platform_interface$46dart.plugin_platform_interface;
+  const vector_math = packages__vector_math__vector_math$46dart.vector_math;
+  var method_channel_geolocator = Object.create(dart.library);
+  var geolocator_platform_interface = Object.create(dart.library);
+  var geolocator_platform_interface$ = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    boolN: () => (T.boolN = dart.constFn(dart.nullable(core.bool)))(),
+    boolNTobool: () => (T.boolNTobool = dart.constFn(dart.fnType(core.bool, [T.boolN()])))(),
+    IdentityMapOfString$dynamic: () => (T.IdentityMapOfString$dynamic = dart.constFn(_js_helper.IdentityMap$(core.String, dart.dynamic)))(),
+    PositionN: () => (T.PositionN = dart.constFn(dart.nullable(position.Position)))(),
+    EventSinkTovoid: () => (T.EventSinkTovoid = dart.constFn(dart.fnType(dart.void, [async.EventSink])))(),
+    dynamicToPosition: () => (T.dynamicToPosition = dart.constFn(dart.fnType(position.Position, [dart.dynamic])))(),
+    dynamicToNever: () => (T.dynamicToNever = dart.constFn(dart.fnType(dart.Never, [dart.dynamic])))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: location_accuracy.LocationAccuracy.prototype,
+        [_name]: "LocationAccuracy.best",
+        index: 4
+      });
+    },
+    get C1() {
+      return C[1] = dart.const({
+        __proto__: core.Object.prototype
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: message_codecs.StandardMessageCodec.prototype
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: message_codecs.StandardMethodCodec.prototype,
+        [StandardMethodCodec_messageCodec]: C[4] || CT.C4
+      });
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: platform_channel.MethodChannel.prototype,
+        [MethodChannel__binaryMessenger]: null,
+        [MethodChannel_codec]: C[3] || CT.C3,
+        [MethodChannel_name]: "flutter.baseflow.com/geolocator"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: platform_channel.EventChannel.prototype,
+        [EventChannel__binaryMessenger]: null,
+        [EventChannel_codec]: C[3] || CT.C3,
+        [EventChannel_name]: "flutter.baseflow.com/geolocator_updates"
+      });
+    }
+  }, false);
+  var C = Array(6).fill(void 0);
+  var I = [
+    "file:///D:/dev%20tools/a123/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_platform_interface-2.0.2/lib/src/implementations/method_channel_geolocator.dart",
+    "file:///D:/dev%20tools/a123/flutter/.pub-cache/hosted/pub.dartlang.org/geolocator_platform_interface-2.0.2/lib/src/geolocator_platform_interface.dart",
+    "package:geolocator_platform_interface/src/geolocator_platform_interface.dart",
+    "package:geolocator_platform_interface/src/implementations/method_channel_geolocator.dart"
+  ];
+  var forceAndroidLocationManager = dart.privateName(method_channel_geolocator, "MethodChannelGeolocator.forceAndroidLocationManager");
+  var _positionStream = dart.privateName(method_channel_geolocator, "_positionStream");
+  var _handlePlatformException = dart.privateName(method_channel_geolocator, "_handlePlatformException");
+  var _name = dart.privateName(location_accuracy, "_name");
+  geolocator_platform_interface.GeolocatorPlatform = class GeolocatorPlatform extends plugin_platform_interface.PlatformInterface {
+    static get instance() {
+      return geolocator_platform_interface.GeolocatorPlatform._instance;
+    }
+    static set instance(instance) {
+      if (instance == null) dart.nullFailed(I[1], 35, 42, "instance");
+      plugin_platform_interface.PlatformInterface.verifyToken(instance, geolocator_platform_interface.GeolocatorPlatform._token);
+      geolocator_platform_interface.GeolocatorPlatform._instance = instance;
+    }
+    checkPermission() {
+      dart.throw(new core.UnimplementedError.new("checkPermission() has not been implemented."));
+    }
+    requestPermission() {
+      dart.throw(new core.UnimplementedError.new("requestPermission() has not been implemented."));
+    }
+    isLocationServiceEnabled() {
+      dart.throw(new core.UnimplementedError.new("isLocationServiceEnabled() has not been implemented."));
+    }
+    getLastKnownPosition(opts) {
+      let forceAndroidLocationManager = opts && 'forceAndroidLocationManager' in opts ? opts.forceAndroidLocationManager : false;
+      if (forceAndroidLocationManager == null) dart.nullFailed(I[1], 79, 10, "forceAndroidLocationManager");
+      dart.throw(new core.UnimplementedError.new("getLastKnownPosition() has not been implemented."));
+    }
+    getCurrentPosition(opts) {
+      let desiredAccuracy = opts && 'desiredAccuracy' in opts ? opts.desiredAccuracy : C[0] || CT.C0;
+      if (desiredAccuracy == null) dart.nullFailed(I[1], 103, 22, "desiredAccuracy");
+      let forceAndroidLocationManager = opts && 'forceAndroidLocationManager' in opts ? opts.forceAndroidLocationManager : false;
+      if (forceAndroidLocationManager == null) dart.nullFailed(I[1], 104, 10, "forceAndroidLocationManager");
+      let timeLimit = opts && 'timeLimit' in opts ? opts.timeLimit : null;
+      dart.throw(new core.UnimplementedError.new("getCurrentPosition() has not been implemented."));
+    }
+    getPositionStream(opts) {
+      let desiredAccuracy = opts && 'desiredAccuracy' in opts ? opts.desiredAccuracy : C[0] || CT.C0;
+      if (desiredAccuracy == null) dart.nullFailed(I[1], 145, 22, "desiredAccuracy");
+      let distanceFilter = opts && 'distanceFilter' in opts ? opts.distanceFilter : 0;
+      if (distanceFilter == null) dart.nullFailed(I[1], 146, 9, "distanceFilter");
+      let forceAndroidLocationManager = opts && 'forceAndroidLocationManager' in opts ? opts.forceAndroidLocationManager : false;
+      if (forceAndroidLocationManager == null) dart.nullFailed(I[1], 147, 10, "forceAndroidLocationManager");
+      let timeInterval = opts && 'timeInterval' in opts ? opts.timeInterval : 0;
+      if (timeInterval == null) dart.nullFailed(I[1], 148, 9, "timeInterval");
+      let timeLimit = opts && 'timeLimit' in opts ? opts.timeLimit : null;
+      dart.throw(new core.UnimplementedError.new("getPositionStream() has not been implemented."));
+    }
+    openAppSettings() {
+      return async.async(core.bool, function* openAppSettings() {
+        dart.throw(new core.UnimplementedError.new("openAppSettings() has not been implemented."));
+      });
+    }
+    openLocationSettings() {
+      return async.async(core.bool, function* openLocationSettings() {
+        dart.throw(new core.UnimplementedError.new("openLocationSettings() has not been implemented."));
+      });
+    }
+    distanceBetween(startLatitude, startLongitude, endLatitude, endLongitude) {
+      if (startLatitude == null) dart.nullFailed(I[1], 178, 12, "startLatitude");
+      if (startLongitude == null) dart.nullFailed(I[1], 179, 12, "startLongitude");
+      if (endLatitude == null) dart.nullFailed(I[1], 180, 12, "endLatitude");
+      if (endLongitude == null) dart.nullFailed(I[1], 181, 12, "endLongitude");
+      let earthRadius = 6378137.0;
+      let dLat = geolocator_platform_interface.GeolocatorPlatform._toRadians(dart.notNull(endLatitude) - dart.notNull(startLatitude));
+      let dLon = geolocator_platform_interface.GeolocatorPlatform._toRadians(dart.notNull(endLongitude) - dart.notNull(startLongitude));
+      let a = math.pow(math.sin(core.num.as(dart.dsend(dLat, '/', [2]))), 2) + math.pow(math.sin(core.num.as(dart.dsend(dLon, '/', [2]))), 2) * math.cos(core.num.as(geolocator_platform_interface.GeolocatorPlatform._toRadians(startLatitude))) * math.cos(core.num.as(geolocator_platform_interface.GeolocatorPlatform._toRadians(endLatitude)));
+      let c = 2 * math.asin(math.sqrt(a));
+      return earthRadius * c;
+    }
+    static _toRadians(degree) {
+      if (degree == null) dart.nullFailed(I[1], 196, 28, "degree");
+      return dart.notNull(degree) * 3.141592653589793 / 180;
+    }
+    bearingBetween(startLatitude, startLongitude, endLatitude, endLongitude) {
+      if (startLatitude == null) dart.nullFailed(I[1], 207, 12, "startLatitude");
+      if (startLongitude == null) dart.nullFailed(I[1], 208, 12, "startLongitude");
+      if (endLatitude == null) dart.nullFailed(I[1], 209, 12, "endLatitude");
+      if (endLongitude == null) dart.nullFailed(I[1], 210, 12, "endLongitude");
+      let startLongitudeRadians = vector_math.radians(startLongitude);
+      let startLatitudeRadians = vector_math.radians(startLatitude);
+      let endLongitudeRadians = vector_math.radians(endLongitude);
+      let endLatitudeRadians = vector_math.radians(endLatitude);
+      let y = math.sin(dart.notNull(endLongitudeRadians) - dart.notNull(startLongitudeRadians)) * math.cos(endLatitudeRadians);
+      let x = math.cos(startLatitudeRadians) * math.sin(endLatitudeRadians) - math.sin(startLatitudeRadians) * math.cos(endLatitudeRadians) * math.cos(dart.notNull(endLongitudeRadians) - dart.notNull(startLongitudeRadians));
+      return vector_math.degrees(math.atan2(y, x));
+    }
+  };
+  (geolocator_platform_interface.GeolocatorPlatform.new = function() {
+    geolocator_platform_interface.GeolocatorPlatform.__proto__.new.call(this, {token: geolocator_platform_interface.GeolocatorPlatform._token});
+    ;
+  }).prototype = geolocator_platform_interface.GeolocatorPlatform.prototype;
+  dart.addTypeTests(geolocator_platform_interface.GeolocatorPlatform);
+  dart.addTypeCaches(geolocator_platform_interface.GeolocatorPlatform);
+  dart.setMethodSignature(geolocator_platform_interface.GeolocatorPlatform, () => ({
+    __proto__: dart.getMethods(geolocator_platform_interface.GeolocatorPlatform.__proto__),
+    checkPermission: dart.fnType(async.Future$(location_permission.LocationPermission), []),
+    requestPermission: dart.fnType(async.Future$(location_permission.LocationPermission), []),
+    isLocationServiceEnabled: dart.fnType(async.Future$(core.bool), []),
+    getLastKnownPosition: dart.fnType(async.Future$(dart.nullable(position.Position)), [], {forceAndroidLocationManager: core.bool}, {}),
+    getCurrentPosition: dart.fnType(async.Future$(position.Position), [], {desiredAccuracy: location_accuracy.LocationAccuracy, forceAndroidLocationManager: core.bool, timeLimit: dart.nullable(core.Duration)}, {}),
+    getPositionStream: dart.fnType(async.Stream$(position.Position), [], {desiredAccuracy: location_accuracy.LocationAccuracy, distanceFilter: core.int, forceAndroidLocationManager: core.bool, timeInterval: core.int, timeLimit: dart.nullable(core.Duration)}, {}),
+    openAppSettings: dart.fnType(async.Future$(core.bool), []),
+    openLocationSettings: dart.fnType(async.Future$(core.bool), []),
+    distanceBetween: dart.fnType(core.double, [core.double, core.double, core.double, core.double]),
+    bearingBetween: dart.fnType(core.double, [core.double, core.double, core.double, core.double])
+  }));
+  dart.setLibraryUri(geolocator_platform_interface.GeolocatorPlatform, I[2]);
+  dart.defineLazy(geolocator_platform_interface.GeolocatorPlatform, {
+    /*geolocator_platform_interface.GeolocatorPlatform._token*/get _token() {
+      return C[1] || CT.C1;
+    },
+    /*geolocator_platform_interface.GeolocatorPlatform._instance*/get _instance() {
+      return new method_channel_geolocator.MethodChannelGeolocator.new();
+    },
+    set _instance(_) {}
+  }, false);
+  var MethodChannel__binaryMessenger = dart.privateName(platform_channel, "MethodChannel._binaryMessenger");
+  var StandardMethodCodec_messageCodec = dart.privateName(message_codecs, "StandardMethodCodec.messageCodec");
+  var MethodChannel_codec = dart.privateName(platform_channel, "MethodChannel.codec");
+  var MethodChannel_name = dart.privateName(platform_channel, "MethodChannel.name");
+  var EventChannel__binaryMessenger = dart.privateName(platform_channel, "EventChannel._binaryMessenger");
+  var EventChannel_codec = dart.privateName(platform_channel, "EventChannel.codec");
+  var EventChannel_name = dart.privateName(platform_channel, "EventChannel.name");
+  method_channel_geolocator.MethodChannelGeolocator = class MethodChannelGeolocator extends geolocator_platform_interface.GeolocatorPlatform {
+    get forceAndroidLocationManager() {
+      return this[forceAndroidLocationManager];
+    }
+    set forceAndroidLocationManager(value) {
+      this[forceAndroidLocationManager] = value;
+    }
+    checkPermission() {
+      return async.async(location_permission.LocationPermission, (function* checkPermission() {
+        try {
+          let permission = core.int.as(yield method_channel_geolocator.MethodChannelGeolocator._methodChannel.invokeMethod(dart.dynamic, "checkPermission"));
+          return integer_extensions['IntergerExtensions|toLocationPermission'](permission);
+        } catch (e$) {
+          let e = dart.getThrown(e$);
+          if (message_codec.PlatformException.is(e)) {
+            this[_handlePlatformException](e);
+            dart.rethrow(e$);
+          } else
+            throw e$;
+        }
+      }).bind(this));
+    }
+    requestPermission() {
+      return async.async(location_permission.LocationPermission, (function* requestPermission() {
+        try {
+          let permission = core.int.as(yield method_channel_geolocator.MethodChannelGeolocator._methodChannel.invokeMethod(dart.dynamic, "requestPermission"));
+          return integer_extensions['IntergerExtensions|toLocationPermission'](permission);
+        } catch (e$) {
+          let e = dart.getThrown(e$);
+          if (message_codec.PlatformException.is(e)) {
+            this[_handlePlatformException](e);
+            dart.rethrow(e$);
+          } else
+            throw e$;
+        }
+      }).bind(this));
+    }
+    isLocationServiceEnabled() {
+      return async.async(core.bool, function* isLocationServiceEnabled() {
+        return method_channel_geolocator.MethodChannelGeolocator._methodChannel.invokeMethod(core.bool, "isLocationServiceEnabled").then(core.bool, dart.fn(value => {
+          let t2;
+          t2 = value;
+          return t2 == null ? false : t2;
+        }, T.boolNTobool()));
+      });
+    }
+    getLastKnownPosition(opts) {
+      let forceAndroidLocationManager = opts && 'forceAndroidLocationManager' in opts ? opts.forceAndroidLocationManager : false;
+      if (forceAndroidLocationManager == null) dart.nullFailed(I[0], 69, 10, "forceAndroidLocationManager");
+      return async.async(T.PositionN(), (function* getLastKnownPosition() {
+        try {
+          let parameters = new (T.IdentityMapOfString$dynamic()).from(["forceAndroidLocationManager", forceAndroidLocationManager]);
+          let positionMap = (yield method_channel_geolocator.MethodChannelGeolocator._methodChannel.invokeMethod(dart.dynamic, "getLastKnownPosition", parameters));
+          return positionMap != null ? position.Position.fromMap(positionMap) : null;
+        } catch (e$) {
+          let e = dart.getThrown(e$);
+          if (message_codec.PlatformException.is(e)) {
+            this[_handlePlatformException](e);
+            dart.rethrow(e$);
+          } else
+            throw e$;
+        }
+      }).bind(this));
+    }
+    getCurrentPosition(opts) {
+      let desiredAccuracy = opts && 'desiredAccuracy' in opts ? opts.desiredAccuracy : C[0] || CT.C0;
+      if (desiredAccuracy == null) dart.nullFailed(I[0], 89, 22, "desiredAccuracy");
+      let forceAndroidLocationManager = opts && 'forceAndroidLocationManager' in opts ? opts.forceAndroidLocationManager : false;
+      if (forceAndroidLocationManager == null) dart.nullFailed(I[0], 90, 10, "forceAndroidLocationManager");
+      let timeLimit = opts && 'timeLimit' in opts ? opts.timeLimit : null;
+      return async.async(position.Position, (function* getCurrentPosition() {
+        let locationOptions = new location_options.LocationOptions.new({accuracy: desiredAccuracy, forceAndroidLocationManager: forceAndroidLocationManager});
+        try {
+          let positionFuture = null;
+          if (timeLimit != null) {
+            positionFuture = method_channel_geolocator.MethodChannelGeolocator._methodChannel.invokeMethod(dart.dynamic, "getCurrentPosition", locationOptions.toJson()).timeout(timeLimit);
+          } else {
+            positionFuture = method_channel_geolocator.MethodChannelGeolocator._methodChannel.invokeMethod(dart.dynamic, "getCurrentPosition", locationOptions.toJson());
+          }
+          let positionMap = (yield positionFuture);
+          return position.Position.fromMap(positionMap);
+        } catch (e$) {
+          let e = dart.getThrown(e$);
+          if (message_codec.PlatformException.is(e)) {
+            this[_handlePlatformException](e);
+            dart.rethrow(e$);
+          } else
+            throw e$;
+        }
+      }).bind(this));
+    }
+    getPositionStream(opts) {
+      let desiredAccuracy = opts && 'desiredAccuracy' in opts ? opts.desiredAccuracy : C[0] || CT.C0;
+      if (desiredAccuracy == null) dart.nullFailed(I[0], 126, 22, "desiredAccuracy");
+      let distanceFilter = opts && 'distanceFilter' in opts ? opts.distanceFilter : 0;
+      if (distanceFilter == null) dart.nullFailed(I[0], 127, 9, "distanceFilter");
+      let forceAndroidLocationManager = opts && 'forceAndroidLocationManager' in opts ? opts.forceAndroidLocationManager : false;
+      if (forceAndroidLocationManager == null) dart.nullFailed(I[0], 128, 10, "forceAndroidLocationManager");
+      let timeInterval = opts && 'timeInterval' in opts ? opts.timeInterval : 0;
+      if (timeInterval == null) dart.nullFailed(I[0], 129, 9, "timeInterval");
+      let timeLimit = opts && 'timeLimit' in opts ? opts.timeLimit : null;
+      let locationOptions = new location_options.LocationOptions.new({accuracy: desiredAccuracy, distanceFilter: distanceFilter, forceAndroidLocationManager: forceAndroidLocationManager, timeInterval: timeInterval});
+      if (this[_positionStream] != null) {
+        return dart.nullCheck(this[_positionStream]);
+      }
+      let positionStream = method_channel_geolocator.MethodChannelGeolocator._eventChannel.receiveBroadcastStream(locationOptions.toJson());
+      if (timeLimit != null) {
+        positionStream = positionStream.timeout(timeLimit, {onTimeout: dart.fn(s => {
+            if (s == null) dart.nullFailed(I[0], 150, 21, "s");
+            s.addError(new async.TimeoutException.new("Time limit reached while waiting for position update.", timeLimit));
+            s.close();
+            this[_positionStream] = null;
+          }, T.EventSinkTovoid())});
+      }
+      this[_positionStream] = positionStream.map(position.Position, dart.fn(element => position.Position.fromMap(dart.dgsend(element, [core.String, dart.dynamic], 'cast', [])), T.dynamicToPosition())).handleError(dart.fn(error => {
+        this[_positionStream] = null;
+        if (message_codec.PlatformException.is(error)) {
+          this[_handlePlatformException](error);
+        }
+        dart.throw(error);
+      }, T.dynamicToNever()));
+      return dart.nullCheck(this[_positionStream]);
+    }
+    openAppSettings() {
+      return async.async(core.bool, function* openAppSettings() {
+        return method_channel_geolocator.MethodChannelGeolocator._methodChannel.invokeMethod(core.bool, "openAppSettings").then(core.bool, dart.fn(value => {
+          let t4;
+          t4 = value;
+          return t4 == null ? false : t4;
+        }, T.boolNTobool()));
+      });
+    }
+    openLocationSettings() {
+      return async.async(core.bool, function* openLocationSettings() {
+        return method_channel_geolocator.MethodChannelGeolocator._methodChannel.invokeMethod(core.bool, "openLocationSettings").then(core.bool, dart.fn(value => {
+          let t4;
+          t4 = value;
+          return t4 == null ? false : t4;
+        }, T.boolNTobool()));
+      });
+    }
+    [_handlePlatformException](exception) {
+      if (exception == null) dart.nullFailed(I[0], 188, 51, "exception");
+      switch (exception.code) {
+        case "ACTIVITY_MISSING":
+        {
+          dart.throw(new activity_missing_exception.ActivityMissingException.new(exception.message));
+        }
+        case "LOCATION_SERVICES_DISABLED":
+        {
+          dart.throw(new location_service_disabled_exception.LocationServiceDisabledException.new());
+        }
+        case "LOCATION_SUBSCRIPTION_ACTIVE":
+        {
+          dart.throw(new already_subscribed_exception.AlreadySubscribedException.new());
+        }
+        case "PERMISSION_DEFINITIONS_NOT_FOUND":
+        {
+          dart.throw(new permission_definitions_not_found_exception.PermissionDefinitionsNotFoundException.new(exception.message));
+        }
+        case "PERMISSION_DENIED":
+        {
+          dart.throw(new permission_denied_exception.PermissionDeniedException.new(exception.message));
+        }
+        case "PERMISSION_REQUEST_IN_PROGRESS":
+        {
+          dart.throw(new permission_request_in_progress_exception.PermissionRequestInProgressException.new(exception.message));
+        }
+        case "LOCATION_UPDATE_FAILURE":
+        {
+          dart.throw(new position_update_exception.PositionUpdateException.new(exception.message));
+        }
+        default:
+        {
+          dart.throw(exception);
+        }
+      }
+    }
+  };
+  (method_channel_geolocator.MethodChannelGeolocator.new = function() {
+    this[forceAndroidLocationManager] = false;
+    this[_positionStream] = null;
+    method_channel_geolocator.MethodChannelGeolocator.__proto__.new.call(this);
+    ;
+  }).prototype = method_channel_geolocator.MethodChannelGeolocator.prototype;
+  dart.addTypeTests(method_channel_geolocator.MethodChannelGeolocator);
+  dart.addTypeCaches(method_channel_geolocator.MethodChannelGeolocator);
+  dart.setMethodSignature(method_channel_geolocator.MethodChannelGeolocator, () => ({
+    __proto__: dart.getMethods(method_channel_geolocator.MethodChannelGeolocator.__proto__),
+    [_handlePlatformException]: dart.fnType(dart.void, [message_codec.PlatformException])
+  }));
+  dart.setLibraryUri(method_channel_geolocator.MethodChannelGeolocator, I[3]);
+  dart.setFieldSignature(method_channel_geolocator.MethodChannelGeolocator, () => ({
+    __proto__: dart.getFields(method_channel_geolocator.MethodChannelGeolocator.__proto__),
+    forceAndroidLocationManager: dart.fieldType(core.bool),
+    [_positionStream]: dart.fieldType(dart.nullable(async.Stream$(position.Position)))
+  }));
+  dart.defineLazy(method_channel_geolocator.MethodChannelGeolocator, {
+    /*method_channel_geolocator.MethodChannelGeolocator._methodChannel*/get _methodChannel() {
+      return C[2] || CT.C2;
+    },
+    /*method_channel_geolocator.MethodChannelGeolocator._eventChannel*/get _eventChannel() {
+      return C[5] || CT.C5;
+    }
+  }, false);
+  dart.trackLibraries("packages/geolocator_platform_interface/src/implementations/method_channel_geolocator.dart", {
+    "package:geolocator_platform_interface/src/implementations/method_channel_geolocator.dart": method_channel_geolocator,
+    "package:geolocator_platform_interface/src/geolocator_platform_interface.dart": geolocator_platform_interface,
+    "package:geolocator_platform_interface/geolocator_platform_interface.dart": geolocator_platform_interface$
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["../geolocator_platform_interface.dart","method_channel_geolocator.dart"],"names":[],"mappings":"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","file":"../../../../../../../../../../packages/geolocator_platform_interface/src/implementations/method_channel_geolocator.dart.lib.js"}');
+  // Exports:
+  return {
+    src__implementations__method_channel_geolocator: method_channel_geolocator,
+    src__geolocator_platform_interface: geolocator_platform_interface,
+    geolocator_platform_interface: geolocator_platform_interface$
+  };
+}));
+
+//# sourceMappingURL=method_channel_geolocator.dart.lib.js.map
