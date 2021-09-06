@@ -1,7 +1,0 @@
-{
-  "base_url1": "http://47.243.24.221/",
-  "base_url2": "http://10.10.10.30:8000/",
-  "base_url": "http://47.243.24.221/",
-  "api_base_url": "http://47.243.24.221/api/",
-  "amap_restapi_url": "https://restapi.amap.com/v3/geocode/regeo"
-}
